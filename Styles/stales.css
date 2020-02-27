@@ -2,13 +2,14 @@ body{
     padding: 0;
     margin: 0;
     line-height: 1;
-    background: whitesmoke;
+    background: white;
     font-family: Arial, 'sans-serif';
 }
 .conteiner {
 width: 70%;
 max-width: 700px;
 margin: 0 auto;
+text-align: center;
 }
 .title {
     font-weight: normal;
@@ -18,22 +19,31 @@ margin: 0 auto;
     padding: 20px;
 }
 #beetroot_img {
-width: 100%;
+width: 57%;
+
 }
 .lesson_list {
-    border: 1 px solid darkgray;
     list-style-type: none;
     padding: 0%;
-}
+    }
 .lesson_list .list_item {
     padding: 20px 30px;
-    font-size: 14px;
-    border-bottom: 1px solid darkgray;
-}
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    border-bottom: 1px solid #8f0f1c;
+    outline-style: solid;
+    outline-color:white;
+    background-color: #8f0f1c;
+    margin: 0% 30%;
+    }
 .lesson_list .list_item:last-child {
     border-bottom: none;
     }
        
 .list_item a {
-        
+    text-decoration: none;
+    color: white;      
+}
+.list_item a:visited{
+    color: white;
 }
