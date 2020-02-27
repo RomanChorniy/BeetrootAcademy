@@ -1,0 +1,39 @@
+body{
+    padding: 0;
+    margin: 0;
+    line-height: 1;
+    background: whitesmoke;
+    font-family: Arial, 'sans-serif';
+}
+.conteiner {
+width: 70%;
+max-width: 700px;
+margin: 0 auto;
+}
+.title {
+    font-weight: normal;
+    color: #8f0f1c;
+    text-align: center;
+    border-bottom: 2px solid #8f0f1c;
+    padding: 20px;
+}
+#beetroot_img {
+width: 100%;
+}
+.lesson_list {
+    border: 1 px solid darkgray;
+    list-style-type: none;
+    padding: 0%;
+}
+.lesson_list .list_item {
+    padding: 20px 30px;
+    font-size: 14px;
+    border-bottom: 1px solid darkgray;
+}
+.lesson_list .list_item:last-child {
+    border-bottom: none;
+    }
+       
+.list_item a {
+        
+}
