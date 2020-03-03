@@ -1,0 +1,94 @@
+
+* {
+    
+}
+.container{
+    margin: auto;
+    width: 1200px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    }
+
+.block{
+    display: block;
+    float: left;
+    width: 33%;
+    }
+
+a.tablet{
+    display: block;
+    width: 65px;
+    height: 65px;
+    margin: auto;
+    border-radius: 50%;
+    border: 2px solid transparent;
+    background-image: url(img/Tablet_white.png);
+    background-color:  #2a69a6;
+    background-repeat: no-repeat;
+    background-position: center;
+      
+   }
+   a.tablet:hover {
+       background-image: url(img/Tablet_blue.png);
+       background-color: white;
+       border: 2px solid #2a69a6;
+       transition: all.1s ease-in;
+
+   }
+   a.settings{
+    display: block;
+    margin: auto;
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    border: 2px solid transparent;
+    background-image: url(img/Settings_white.png);
+    background-color:  #2a69a6;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+   }
+   a.settings:hover {
+       background-image: url(img/settings_blue.png);
+       background-color: white;
+       border: 2px solid #2a69a6;
+       transition: all.1s ease-in;
+   }
+   a.dashboard{
+    display: block;
+    margin: auto;
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    border: 2px solid transparent;
+    background-image: url(img/Dashboard_white.png);
+    background-color:  #2a69a6;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+   }
+   a.dashboard:hover {
+       background-image: url(img/Dashboard_blue.png);
+       background-color: white;
+       border: 2px solid #2a69a6;
+       transition: all.1s ease-in;
+   }
+
+ /* заголовки */
+ h4 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    text-align: center;
+    line-height: 1.714;
+    color: #1a0000;
+ }
+ p {
+    padding: 0px 12%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    text-align: center;
+    line-height: 1.429;
+    color: #1a0000;
+ }
