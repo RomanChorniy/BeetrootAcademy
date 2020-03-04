@@ -2,12 +2,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Lucida Grande', 'Lucida Sans Unicode', sans-serif;
+    
 }
 .container {
     background-color: #3399cc;
     min-height: 95vh;
     margin: 20px;
+    font-family: 'Lucida Grande', 'Lucida Sans Unicode', sans-serif;
 }
 header{
     margin: auto 15%;
