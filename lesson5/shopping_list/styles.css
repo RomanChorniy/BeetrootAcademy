@@ -1,0 +1,80 @@
+*, :before, :after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  }
+/* Контейнер */
+.container {
+  background-color: #3b3f45;
+  min-height: 95vh;
+  margin: 20px;
+  }
+/* Заголовок */
+header{
+  background-color: #4a4f56;
+  color: #eb7e7f;
+  text-align: center;
+  font-family: 'Trebuchet MS', Arial, sans-serif;
+  letter-spacing: 0.1rem;
+  padding: 35px   10px;
+  }
+h2 {
+  font-weight: lighter;
+  }
+  /* Cписок */
+section{
+  width: 40%;
+  min-width: 505px;
+  margin: 40px auto;
+}
+li{
+  padding: 20px;
+  font-family: 'Trebuchet MS', Arial, sans-serif;
+  color: #f9f9f9;
+  list-style: none;
+  font-size: 30px;
+  background-color: #88839e;
+  }
+label:nth-child(even) li{
+background-color: #7a7593;
+}
+.item {
+  display: inline-block;
+  margin-left: 10px;
+}
+span {
+  font-size: 1.2rem;
+  color: #c8cbd6;
+  }
+  span::before{
+    content: "(";
+  }
+  span::after{
+    content: ")";
+  }
+input{
+  width: 27px;
+  height: 27px;
+  }
+input:checked+div{
+  text-decoration: line-through;
+  color: #a3a0b2;
+}
+label li:hover {
+  border-top: 3px solid white;
+  border-bottom: 3px solid white;
+  background-color: #625e77;
+}
+/* Підвал */
+footer{
+  background-color: #4a4f56;
+  margin: auto;
+  min-width: 505px;
+  width: 40%;
+  height: 100px;
+  text-align: center;
+  font-family: 'Trebuchet MS', Arial, sans-serif;
+  color: #eb7e7f;
+  font-size: 26px;
+  padding: 35px 10px;
+}
