@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1;
+}
+.container {
+    width: 960px;
+    margin: auto;
+    }
+h3, h4, header {
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 2.5;
+    text-align: center;
+}
+h3 {
+    margin-top: 144px;
+    font-size: 12px;
+    color: #898f99;
+    font-weight: bold;
+}
+h4 {
+    font-size: 21px;
+    margin: 20px;
+}
+div[class="diamond"] h4 {
+    line-height: 1;
+}
+
+header {
+    font-size: 48px;
+    color: #0ec8cd;
+    font-weight: bold;
+    width: 530px;
+    margin: 0 auto;
+    padding: 0;
+}
+p {
+    font-family: 'PT Sans', sans-serif;
+    text-transform: uppercase;
+    line-height: 30px;
+    text-align: justify;
+    font-size: 18px;
+    color: #999999;
+    padding: 0 17px;
+    width: 490px;
+    margin: 0 auto;
+}
+
+
+    
+h4+p {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 14px;
+    line-height: 22px;
+    color: #777777;
+    width: 240px;
+    text-align: center;
+    padding-bottom: 97px;
+
+}
+.container>div {
+    margin-top: 108px;
+    width: 240px;
+    height: 420px;
+    float: left;
+    background-color: #f7f7f7;
+    text-align: center;
+    border:1px solid #ededed;
+    border-right: transparent;
+}
+div.monitor {
+    border-right: 1px solid #ededed;
+}
+img {
+    margin-top: 55px;
+}
+div.anchor_logo{
+    background-image: url(img/Anchor.png);
+    background-repeat: no-repeat;
+    width: 64px;
+    height: 66px;
+    margin: 55px auto auto;
+}
+div.diamond_logo{
+    background-image: url(img/Diamond.png);
+    background-repeat: no-repeat;
+    width: 64px;
+    height: 66px;
+    margin: 55px auto auto;
+}
+div.eyeglasses_logo{
+    background-image: url(img/Eyeglasses.png);
+    background-repeat: no-repeat;
+    width: 64px;
+    height: 66px;
+    margin: 55px auto auto;}
+div.monitor_logo{
+    background-image: url(img/Monitor.png);
+    background-repeat: no-repeat;
+    width: 64px;
+    height: 66px;
+    margin: 55px auto auto;}
+
+div:not(.container):hover
+{
+    background-color: #0ec8cd;
+    color: white;
+}
+
+div:not(.container):hover .text {
+    color: white;}
+div:not(.container):hover .anchor_logo {
+    background-image: url(img/Anchor_white.png);}
+    div:not(.container):hover .diamond_logo {
+        background-image: url(img/Diamond_white.png);}
+        div:not(.container):hover .eyeglasses_logo {
+            background-image: url(img/Eyeglasses_white.png);}
+            div:not(.container):hover .monitor_logo {
+                background-image: url(img/Monitor_white.png);}
