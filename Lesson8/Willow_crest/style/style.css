@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+article{
+    margin: 130px auto;
+    padding: 121px;
+    width: 1400px;
+    font-family: 'Playfair Display', serif;
+    box-shadow: 0px 10px 20px gray;
+}
+h2{
+    font-size: 42px;
+}
+p{
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-size: 21px;
+    line-height: 2;
+    margin: 25px 0;
+}
+span{
+    font-family: 'Playfair Display', serif;
+    font-size: 110px;
+    display: block;
+    float: left;
+}
+blockquote{
+    font-family: 'Lato', sans-serif;
+    font-style: italic;
+    font-size: 21px;
+    font-weight: 300;
+    margin-bottom: 40px;
+}
+a{
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    text-decoration: none;
+    color: #eaa258;
+    border: 2px solid #eaa258;
+    width: 265px;
+    height: 68px;
+    display: block;
+    text-align: center;
+    line-height: 60px;
+}
+/* Icon */
+@font-face {
+    font-family: 'icomoon';
+    src:  url('../fonts/icomoon.eot?r75twt');
+    src:  url('../fonts/icomoon.eot?r75twt#iefix') format('embedded-opentype'),
+      url('../fonts/icomoon.ttf?r75twt') format('truetype'),
+      url('../fonts/icomoon.woff?r75twt') format('woff'),
+      url('../fonts/icomoon.svg?r75twt#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+  
+  [class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-size: 21px;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .icon-quotes-left:before {
+    content: "\e977";
+  }
