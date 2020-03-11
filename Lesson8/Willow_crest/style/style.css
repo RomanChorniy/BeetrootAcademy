@@ -1,4 +1,4 @@
-*{
+о*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -16,20 +16,23 @@ h2{
 p{
     font-family: 'Lato', sans-serif;
     font-weight: 300;
-    font-size: 21px;
-    line-height: 2;
+    font-size: 25px;
+    line-height: 1.5;
     margin: 25px 0;
 }
-span{
+h2+p::first-letter{
     font-family: 'Playfair Display', serif;
     font-size: 110px;
-    display: block;
+    font-weight: bold;
+    padding-right: 8px;
     float: left;
+    line-height: 90px;
 }
+
 blockquote{
     font-family: 'Lato', sans-serif;
     font-style: italic;
-    font-size: 21px;
+    font-size: 30px;
     font-weight: 300;
     margin-bottom: 40px;
 }
