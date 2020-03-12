@@ -32,19 +32,21 @@ h1+p{
     width: 370px;
     height: 310px;
     background-repeat: no-repeat;
+    background-size: contain;
+
     position: relative;
 }
 .box:hover{
     box-shadow: 0 0 50px #24064f;
 }
 .first{
-    background-image: url(../img/first.png);
+    background-image: url(../img/first1.png);
 }
 .second{
-    background-image: url(../img/second.png);
+    background-image: url(../img/second1.png);
 }
 .third{
-    background-image: url(../img/third.png);
+    background-image: url(../img/third1.png);
 }
 .data{
     background-color:rgba(38, 38, 38, 0.5);
@@ -59,9 +61,8 @@ h1+p{
     left: 30px;
 }
 p.data1{
-position: relative;
-top: 25%;
-transform: translateY(-25%);
+    font-size: 41px;
+    position: relative;
 }
 
 .text{
@@ -97,4 +98,7 @@ transform: translateY(-25%);
     position: relative;
     top: 50%;
     transform: translateY(-50%);
+}
+.box, .button{
+    transition: box-shadow .5s ease-in-out;
 }
