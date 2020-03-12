@@ -34,6 +34,9 @@ h1+p{
     background-repeat: no-repeat;
     position: relative;
 }
+.box:hover{
+    box-shadow: 0 0 50px #24064f;
+}
 .first{
     background-image: url(../img/first.png);
 }
@@ -86,6 +89,9 @@ transform: translateY(-25%);
     position: relative;
     font-size: 20px;
     box-shadow: 0 0 10px black;
+}
+.button:hover{
+    box-shadow: 0 0 35px #f72b3b;
 }
 .button p{
     position: relative;
