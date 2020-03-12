@@ -32,8 +32,7 @@ h1+p{
     width: 370px;
     height: 310px;
     background-repeat: no-repeat;
-    background-size: contain;
-
+    background-size: cover;
     position: relative;
 }
 .box:hover{
