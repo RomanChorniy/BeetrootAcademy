@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap');
+@font-face {
+    font-family: 'icomoon';
+    src:  url('../fonts/icomoon.eot?8zxsq1');
+    src:  url('../fonts/icomoon.eot?8zxsq1#iefix') format('embedded-opentype'),
+      url('../fonts/icomoon.ttf?8zxsq1') format('truetype'),
+      url('../fonts/icomoon.woff?8zxsq1') format('woff'),
+      url('../fonts/icomoon.svg?8zxsq1#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+  
+  [class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .icon-google:before {
+    content: "\e900";
+  }
+  .icon-facebook:before {
+    content: "\ea90";
+  }
+  .icon-twitter:before {
+    content: "\ea96";
+  }
+
+  /* WORK */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1;
+}
+body{
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+}
+header{
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 16px;
+    font-size: 34px;color: #3c3c3c;
+    margin-top: 108px;
+}
+hr{
+    border: 2px solid #dddbdb;
+    width: 45px;
+    margin: 20px auto 40px;
+}
+h3{
+    color: #3c3c3c;
+    font-size: 16px;
+    width: 570px;
+    margin: 0 auto;
+}
+/* КОНТЕЙНЕР */
+.container{
+    margin-top: 60px    ;
+    display: flex;
+    padding: 0 217px 0 ;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
+    flex-basis: 1170px;
+}
+div p:nth-last-child(2){
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.box{
+    position: relative;
+    width: 300px;
+    height: 400px;
+    background: #fff;
+    text-align: start;
+}
+.imgcard, .details{
+    position: relative;
+    width: 100%;
+    height: 80%;
+    transition: transform .6s linear;
+    overflow: hidden;
+    backface-visibility: hidden;
+}
+img{
+    height: 100%;
+    background: white;
+}
+.imgcard{
+    transform: rotateY(0deg);
+    z-index: 1;
+}
+.details{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 20px;
+    background: #18b5dc;
+    color: white;
+    height: 80%;
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+    line-height: 60px;
+    transform: rotateY(180deg);
+}
+.icon{
+    position: relative;
+    background-color: #6bbccf;
+    display: inline-block;
+    width: 42px;
+    height: 42px;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 2%;
+}
+/* АНІМАЦІЯ */
+.box:hover>.imgcard{
+    transform: rotateY(-180deg);
+}
+.box:hover>.details{
+    transform: rotateY(0deg);
+} 
