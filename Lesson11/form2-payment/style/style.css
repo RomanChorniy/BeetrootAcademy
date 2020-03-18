@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    color: #99a6a8
+}
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
+/* font-family: 'Montserrat', sans-serif; */
+body{
+    background: url(../img/bg1.png) no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.card{
+    width: 336px;
+    background-color: #fff;
+    margin: 35px auto;
+}
+.card__header{
+    background-color: #eee4a9;
+    display: flex;
+    padding: 0 24px;
+    align-items: center;
+    justify-content: space-between;
+    flex-basis: 100%;
+    height: 72px;
+}
+.client__name{
+    color: #6c7c79;
+    font-weight: bold;
+    font-size: 14px;
+}
+.client__mark{
+    color: #a19e8a;
+    font-size: 10px;
+}
+.header__price{
+    color: #61726e;
+    font-weight: bold;
+    font-size: 36px;
+}
+ .payment__block1{
+     width: 100%;
+     padding: 15px 24px 31px;
+     border-bottom: 1px solid #e4e7e8;
+     color: #99a6a8;
+     font-size: 13px;
+ }
+ .formbox{
+     border: 2px solid #b4c1c4;
+     color: #707c7f;
+     height: 40px;
+
+ }
+ .input__lagent_block{
+     display: block;
+     margin: 30px 0 10px;
+}
+[name=card-number]{
+    width: 100%;
+}
+.data__select{
+    display: flex;
+    justify-content: space-between;
+}
+#data__month{
+    flex: 0 0 60%;
+}
+#data__year{
+    flex: 0 0 30%;
+}
+.formbox_cvv{
+    width: 33.3333%;
+}
+a:link, a:visited, a:active, a:hover{
+    color: #99a6a8; 
+}
+.paybutton{
+    background-color: #26b167;
+    font-weight: bold;
+    width: 100%;
+    height: 48px;
+    color: #f1f4f3;
+    border: none;
+    margin-top: 30px;
+    font-size: 20px;
+}
+.paybutton:active{
+    background-color: purple;
+}
+.button__exit{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 56px;
+}

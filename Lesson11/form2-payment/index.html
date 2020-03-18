@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Cahee. Form 1</title>
+</head>
+
+<body>
+    <div class="card">
+        <div class="card__header">
+            <div class="header__client">
+                <div class="client__name">Harold Finch</div>
+                <div class="client__mark">Your Total</div>
+            </div>
+            <div class="header__price">$88</div>
+        </div>
+        <div class="card__form">
+            <form action="" method="GET" name="payment">
+                <div class="payment__block1">
+                    <label class="input__lagent_block" for="">Credit card number</label>
+                    <input class="formbox" type="text" name="card-number" data-mask="0000 0000 0000 0000" autofocus
+                        required>
+                    <label class="input__lagent_block" for="">Expiration date</label>
+                    <div class="data__select">
+                        <select class="formbox" name="Month" id="data__month" required>
+                            <option value="" disabled selected hidden>Month</option>
+                            <option value="">January</option>
+                            <option value="">February</option>
+                            <option value="">March</option>
+                            <option value="">April</option>
+                            <option value="">May</option>
+                            <option value="">June</option>
+                            <option value="">July</option>
+                            <option value="">August</option>
+                            <option value="">September</option>
+                            <option value="">October</option>
+                            <option value="">November</option>
+                            <option value="">December</option>
+                        </select>
+                        <select class="formbox" name="Year" id="data__year" required>
+                            <option value="" disabled selected hidden>Year</option>
+                            <option value="">2020</option>
+                            <option value="">2021</option>
+                            <option value="">2022</option>
+                            <option value="">2023</option>
+                        </select>
+                    </div>
+                    <label class="input__lagent_block" for="">CVV</label>
+                    <input class="formbox formbox_cvv" type="password" required maxlength="4" minlength="3">
+                    <label for="">3 or 4 digits - <a href="#">view example</a></label>
+                </div>
+                <div class="card__button">
+                    <button class="paybutton" type="submit">Pay</button>
+                    <div class="button__exit"><a class="button__exit__link" href="#">Cancel order</a></div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="plugins/jquery.mask.min.js"></script>
+</body>
+
+</html>
