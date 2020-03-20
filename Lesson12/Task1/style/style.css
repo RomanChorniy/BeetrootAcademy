@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+@import url('https://fonts.googleapis.com/css?family=Pacifico|Raleway:300,400,700,900&display=swap');
+/* font-family: 'Pacifico', cursive;
+font-family: 'Raleway', sans-serif; */
+
+.cahee__startpage{
+    height: 1700px;
+}
+.cahee__blog{
+    height: 898px;
+}
+.cahee__contact{
+    height: 956px;
+
+}
+.box{
+    display: flex;
+    flex-direction: column;
+}
+/* Our Services */
+.cahee__our-services{
+    width: 100%;
+    height: 790px;
+    background-image: url(../img/bgOS.png);
+    background-position: right 25% top 50%;
+    background-repeat: no-repeat;
+    background-color: #70bfff;
+    position: relative;
+}
+.our-services__btnbox{
+    height: 462px;
+    display: inline-block;
+    position: relative;
+    top: 50%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+}
+.btn{
+  display: flex;
+  width: 400px;
+  height: 100px;
+  padding: 0 5%;
+  margin-bottom: 20px;
+  background-image: url(../svg/line.svg);
+  background-repeat: no-repeat;
+  background-origin: border-box;
+  background-position: 77%;
+}
+.btnstyle{
+    display: block;
+    flex-grow: 1;
+    font-weight: bold;
+    font-size: 20px;
+    align-self: center;
+}
+/* .line{
+    width: 4px;
+    height: 96px;
+    border-left: 1px solid #9d9d9d;
+} */
+.icon{
+    display: block;
+    width: 50px;
+    height: 50px;
+    align-self: center;
+}
+.our-services__title{
+    display: inline-block;
+    font-weight: bold;
+    font-size: 90px;
+    color: #fff;
+    position: absolute;
+    right: 25%;
+    top: 50%;
+    transform: translate(25%, -50%);
+}
