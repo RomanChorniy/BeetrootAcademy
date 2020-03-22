@@ -1,0 +1,15 @@
+.container__nav{
+    padding: 40px 0;
+    text-align: center;
+    .icon{
+        color: $color2-yellow;
+        &:hover{
+        background-color: $color2-yellow;
+        border-radius: 50%;
+        }
+    }
+    .icon:nth-child(2){
+        background-color: $color2-yellow;
+        border-radius: 50%;
+    }
+}

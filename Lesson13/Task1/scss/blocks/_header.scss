@@ -1,0 +1,14 @@
+.container__header{
+    text-align: center;
+    padding-top: 100px;
+    .header__subtitle{
+        font-size: 18px;
+        font-weight: normal;
+    }
+    .header__title{
+        color: $color2-yellow;
+        font-size: 60px;
+        font-family: $font-secondary;
+        margin-bottom: 40px;
+    }
+}

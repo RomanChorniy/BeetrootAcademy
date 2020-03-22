@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,700|Roboto:900&display=swap');
+@import './blocks/blocks.scss';
+*{
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    box-sizing: border-box;
+}
+body {
+   font-family: $font-primary;
+   color: $color1-grey;
+   min-width: 1060px;
+}
