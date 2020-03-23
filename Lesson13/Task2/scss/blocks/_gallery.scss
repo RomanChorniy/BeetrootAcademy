@@ -1,0 +1,92 @@
+#gallery{
+    padding: 100px 0;
+    text-align: center;
+    background-color: #ffe92f;
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        line-height: 1.5; 
+    }
+    .header{
+        color: $color_gallery;
+        &__title{
+            font-weight: bold;
+            font-size: 90px;
+        }
+        &__subtitle{
+            font-size: 17px;
+            width: 40%;
+            margin: 0 auto;
+        }
+    }
+    .box{
+        width: 78%;
+        margin: 0 auto;
+        &__box1{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            align-content: center;
+            
+            height: 580px;
+            .box1__photo1, .box1__photo2, .box1__photo3{
+                flex: auto;
+                width: 30%;
+                height: 260px;
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: 103% 105%;
+                margin: 15px;
+                box-shadow: 0 0 10px rgba(0,0,0,0.5);
+            }
+            .box1__photo1{
+                background-image: url(../img/img1-Gallery.png);
+                width: 60%;
+                flex-basis: 100%;
+                height: 100%;
+
+            }
+            .box1__photo2{
+                background-image: url(../img/img2-Gallery.png);
+            }
+            .box1__photo3{
+                background-image: url(../img/img3-Gallery.png);
+            }
+        }
+        &__box2{
+            display: flex;
+            justify-content: center;
+            .box2__photo4, .box2__photo5{
+                width: 45%;
+                height: 400px;
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: 103% 105%;
+                margin: 15px;
+                box-shadow: 0 0 10px rgba(0,0,0,0.5);
+            }
+            .box2__photo4{
+                background-image: url(../img/img4-Gallery.png);
+            }
+            .box2__photo5{
+                background-image: url(../img/img5-Gallery.png);
+            }
+
+        }
+    }
+    .btn{
+        margin: 35px auto 0;
+        button{;
+            width: 200px;
+            height: 55px;
+            background-color: #5585a2;
+            color: #fff;
+            border: none;
+            font-size: 20px;
+            font-weight: 300;
+            font-family: $font-primary;
+            box-shadow: 0 0 10px rgba(0,0,0,0.5);
+        }
+    }
+}
