@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css?family=Pacifico|Raleway:300,400,700&display=swap');
+#contact{
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Raleway', sans-serif;
+    }
+    
+    &{
+        background-color: #262626;
+    }
+    .block1{
+        width: 100%;
+        margin: 0 auto;
+        background:url(../img/img_Contact/bg.png) center / cover no-repeat;
+        padding-top: 100px;
+        
+        }
+    .head{
+        color: #262626;
+        text-align: center;
+        width: 370px;
+        margin: 0 auto;  
+    }
+    .head__title{
+        font-size: 50px;
+    }
+    .head__subtitle{
+        font-size: 17px;
+        margin: 45px auto;
+    }
+    .block2{
+        display: flex;
+        flex-wrap: wrap-reverse;
+        justify-content: space-around;
+        padding-bottom: 20px;
+        @media screen and (max-width: 518px){
+            div.block2__form{
+                width: 100%;
+                .block2__form{
+                    width: 100%;
+                }
+            }
+            padding: 20px 10px;
+        }
+    .block2__form{
+        display: flex;
+        float: left;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 445px;
+        width: 500px;
+        }       
+    }
+    [class^=form__]{
+        background-color: rgba(0, 196, 196, 0.5);
+        font-size: 15px;
+        font-weight: bold;
+        color: #fff;
+        width: 100%;
+        height: 50px;
+        padding-left: 20px;
+        border-style: none;
+    }
+        ::-webkit-input-placeholder {color:#fff;
+        font-weight: 300;
+        opacity: 0.5;}
+        ::-moz-placeholder          {color:#fff;
+            font-weight: 300;
+            opacity: 0.5;}/* Firefox 19+ */
+        :-moz-placeholder           {color:#fff;
+            font-weight: 300;
+            opacity: 0.5;}/* Firefox 18- */
+        :-ms-input-placeholder      {color:#fff;
+            font-weight: 300;
+            opacity: 0.5;}
+    .form__message{
+        height: 250px; 
+    }
+    [class^=form__]:focus{
+        background-color: rgba(0, 196, 196, 1);
+        border-left: 5px solid #355b82;
+    }
+    ::-webkit-input-placeholder {color:#fff;
+    font-weight: 300;
+    opacity: 0.5;}
+    ::-moz-placeholder          {color:#fff;
+        font-weight: 300;
+        opacity: 0.5;}/* Firefox 19+ */
+    :-moz-placeholder           {color:#fff;
+        font-weight: 300;
+        opacity: 0.5;}/* Firefox 18- */
+    :-ms-input-placeholder      {color:#fff;
+        font-weight: 300;
+        opacity: 0.5;}
+    .block2__info{
+        font-size: 20px;
+        display: inline-block;
+    }
+    .info__title{
+    margin-bottom: 5px;
+    }
+    .info__text{
+        margin-bottom: 20px;
+    }
+    .footerbox{
+        height: 90px;
+        display: flex;
+        color: #b9b9b9;
+        align-items: center;
+        justify-content: space-around;
+        margin: 0 auto;
+    
+    }
+    .footer__text2{
+        font-family:  'Pacifico', cursive;
+        font-size: 25px;
+        @media screen and (max-width: 518px){
+            display: none;
+        }
+    }
+    .footer__text3_red{
+        color: #ff2b58;
+    }
+}
