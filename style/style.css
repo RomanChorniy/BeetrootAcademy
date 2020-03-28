@@ -12,6 +12,7 @@ margin: 0 auto;
 text-align: center;
 }
 .title {
+    position: relative;
     font-weight: normal;
     color: #8f0f1c;
     text-align: center;
@@ -20,6 +21,7 @@ text-align: center;
 }
 #beetroot_img {
 width: 57%;
+margin: -57px 0;
 }
 .lesson_list {
     list-style-type: none;
