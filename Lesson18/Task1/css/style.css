@@ -1,0 +1,215 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+
+body{
+  background-color: #9789f9;
+}
+.ba-pricing{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ba-pricing__col{
+  background-color: #f5f4f9;
+  width: 330px;
+  /* height: 612px; */
+  margin: 10px;
+  text-align: center;
+  padding-top: 40px;
+}
+
+.ba-price__rate{
+  font-family: 'bebas_neuethin', sans-serif;
+  font-size: 60px;
+  margin: 0;
+}
+.ba-price__rate sup{
+  font-size: 24px;
+  position: relative;
+  top: -24px;
+}
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .ba-price__rate sup{
+    top: -29px;
+  }
+  .ba-price__rate sub{
+    letter-spacing: 1px;
+  }
+}
+.ba-price__rate sub{
+  font-family: 'bebas_neuelight', sans-serif;
+  font-size: 16px;
+  position: relative;
+  top: 0;
+}
+.ba-price__position{
+  font-family: 'bebas_neue_regularregular', sans-serif;
+  font-size: 24px;
+  margin: 0;
+  padding: 20px 0 30px;
+}
+.ba-price__body{
+  padding-top: 35px;
+  background-color: #fff;
+  border-radius: 165px 165px 0px 0px / 120px 120px 0px 0px;
+}
+.ba-price__body span{
+  font-size: 30px;
+}
+.ba-pricing__col--center{
+  padding-top: 50px;
+  position: relative;
+}
+.ba-pricing__col--center span{
+  font-size: 36px;
+}
+.ba-pricing__col--center .ba-button{
+  background-color: #fd8d7b;
+  transform: translateY(-75%);
+}
+.footer{
+  font-family: 'Roboto', sans-serif;
+  font-size: 11px;
+  color: #a9a9a9;
+  position: relative;
+  top: -20px;  
+}
+.ba-price__body ul{
+  list-style: none;
+  text-align: left;
+  padding: 0;
+  position: relative;
+  margin-top: 40px;
+}
+li{
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-25%);
+  padding-bottom: 40px;
+}
+.ba-button{
+width: 203px;
+height: 54px;
+background-color: #6fcffb;
+border-radius: 24px;
+text-decoration: none;
+color: #fff;
+text-transform: uppercase;
+font-family: 'bebas_neuebold', sans-serif;
+font-size: 18px;
+line-height: 54px;
+transform: translateY(50%);
+}
+/* POPULAR BUBLE */
+.popular{
+  max-height: 50px;
+  position: absolute;
+  font-family: 'bebas_neue_regularregular', sans-serif;
+  color: #fff;
+  right: -97px;
+  top: 10px;
+}
+.popular__logo{
+  background-color: #fd8d7b;
+  border-radius: 50%;
+  width: 46px;
+  height: 46px;
+  line-height: 46px;
+  font-size: 24px;
+  display: inline-block;
+}
+.popular__logo p{
+  margin: 0;
+}
+.popular__circle{
+  display: inline-block;
+  background-color: #fd8d7b;
+  border-radius: 50%;
+  width: 13px;
+  height: 13px;
+  position: relative;
+  top: -21px;
+}
+.litle{
+  width: 4px;
+  height: 4px;
+  top: -32px;
+}
+.popular__text{
+  background-color: #3b4040;
+  font-size: 16px;
+  width: 100px;
+  height: 30px;
+  line-height: 30px;
+  position: relative;
+  padding: 0px;
+  border-top-right-radius: 13px;
+  border-bottom-right-radius: 13px;
+  display: inline-block
+}
+
+.popular__text:after{
+   content: '';
+   position: absolute;
+   border-style: solid;
+   border-width: 16px 16px 14px 0;
+   border-color: transparent #3b4040;
+   display: block;
+   width: 0;
+   z-index: 1;
+   left: -16px;
+   top: 0px;
+}
+.popular__text p{
+  margin: 0;
+}
+/* Layout */
+.ba-container{
+  padding-left: 20px;
+  padding-right: 20px;
+  max-width: 1200px;
+}
+
+/* Typography */
+a,
+input[type="submit"],
+input[type="button"],
+button{
+  transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+}
+input[type="submit"],
+input[type="button"],
+button,
+.ba-button{
+  display: inline-block;
+}
+input[type="submit"]:hover,
+input[type="button"]:hover,
+button:hover,
+.ba-button:hover{
+
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="tel"],
+textarea,
+select {
+  transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="number"]:focus,
+input[type="tel"]:focus,
+textarea:focus,
+select:focus {
+
+}
+textarea {
+
+}
