@@ -1,0 +1,251 @@
+*{
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+    box-sizing: border-box;
+    font-family: lato, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+@import url("https://use.typekit.net/ajv0vef.css");
+body{
+    background-color: #fff;
+}
+.header{
+    background-image: url(../img/hero-bg.png);
+    height: 937px;
+    color: #fff;
+    @media screen and (max-width: 400px){
+        height: 553px;
+    }
+}
+.header__box{
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   @media screen and (max-width: 917px){
+    width: 100%;
+   }
+}
+.box{ 
+    width: 100%;
+    text-align: center;
+    position: relative;
+    background-origin: border-box;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.titlebox{
+    margin: 94px;
+    @media screen and (max-width: 570px){
+        margin: 5px;;
+    }
+    
+}
+.title{
+font-weight: 700;
+font-size: 54px;
+margin: 0 auto;
+@media screen and (max-width: 470px){
+    font-size: 31px;
+}
+}
+.subtitle{
+    margin: 25px auto;
+    max-width: 583px;
+}
+.scrole{
+font-size: 37px;
+position: absolute;
+transform: translate(-50%,-50%);
+bottom: 10%;
+}
+.box__about-us{
+    height: 632px;
+}
+.box1{
+    height: 310px;
+    border: 2px solid #3c3c3c;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    max-width: 900px;
+    @media screen and (max-width: 570px){
+        width: 90%;
+        padding: 0 10px;
+    }
+    @media screen and (max-width: 406px){
+        height: auto    ;
+    }
+}
+.about-us__title{
+    background-color: #fff;
+    width: 419px;
+    transform: translateY(-50%);
+    @media screen and (max-width: 570px){
+        width: auto;
+        display: inline-block;
+    }
+    
+}
+.about-us__text, .text{
+    width: 550px;
+    margin: 0 auto 30px;
+    text-transform: none;
+    @media screen and (max-width: 570px){
+        width: auto;
+    }
+}
+.about-us__text+.about-us__text, .text2{
+    width: 436px;
+    margin: 0 auto;
+    @media screen and (max-width: 570px){
+        width: auto;
+    }
+}
+.services{
+    height: 488px;
+    background-image: url(../img/services-bg.png);
+    color: #fff;
+}
+.box__services{
+    background: linear-gradient(to right, #fff 30%, transparent 30%, transparent 70%, #fff 70%) no-repeat;
+    background-size: 100% 2px;
+    background-position: 0 0;
+    border: solid;
+    border-width: 0 2px 2px;
+}
+.services__title{
+    background-color: transparent;
+    transform: translateY(-50%);   
+}
+.box__what-we-do{
+    height: 1415px;
+}
+.what-we-do__subbox{
+    max-width: 1180px;
+    height: auto;
+    border-color: #3c3c3c;
+    @media screen and (max-width: 917px){
+        width: 90%;
+        .what-we-do__item .what-we-do__text{
+            width: 100%;
+        }
+    }
+    
+}
+.what-we-do__title{
+    transform: translateY(-50%);
+    background-color: #fff;
+    width: 419px;
+    @media screen and (max-width: 570px){
+        width: auto;
+        display: inline-block;
+    }
+}
+.item__title{
+    font-size: 60px;
+}
+.what-we-do__text{
+    width: 550px;
+    margin: 37px auto 37px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.what-we-do__text+.what-we-do__text{
+    width: 731px;
+    margin: 0 auto 100px;
+    font-size: 14px;
+    font-weight: normal;
+}
+.our-work__box{
+    height: auto;
+    width: 100%;
+    }
+    .our-work__box__list{
+        display: flex;
+        flex-wrap: wrap;
+        @media screen and (max-width: 685px){
+            .item{
+                flex: auto;
+                width: 0;
+                min-width: 268px;
+            }
+        }
+        
+    }
+    .item{
+        position: relative;
+        flex: 1 0 26%;
+        height: 239px;
+        background-size: 100% 100%;
+        margin: 5px;
+        min-width: 188px;
+    }
+    .listtext{
+        position: absolute;
+        top: 70%;
+        left: 10%;
+        color: #fff;
+        font-size: 20px;
+        font-weight: bold;
+        letter-spacing: 7px;
+    }
+    .list__item1{
+        background-image: url(../img/topworkz.png);
+    }
+    .list__item2{
+        background-image: url(../img/joint.png);
+        flex-grow: 4;
+        min-width: 268px;
+    }.list__item3{
+        background-image: url(../img/market.png);
+    }.list__item4{
+        background-image: url(../img/worktop.png);
+    }.list__item5{
+        background-image: url(../img/lable.png);
+        flex-grow: 4;
+        min-width: 268px;
+    }.list__item6{
+        background-image: url(../img/kyiv.png);
+    }
+.contact-us__box{
+    height: 600px;
+}
+.contact-us__title{
+    transform: translateY(-50%);
+    background-color: #fff;
+    width: 419px;
+    @media screen and (max-width: 570px){
+        width: auto;
+        display: inline-block;
+    }
+}
+.contact-us__btn{
+    width: 400px;
+    height: 60px;
+    background-color: #3c3c3c;
+    color: #fff;
+    font-weight: bold;
+    @media screen and (max-width: 490px){
+        width: 90%
+    }
+}
+.footer__box{
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 50px;
+
+}
+.footer__logo{
+    margin-right: 20px;
+    height: 42px;
+}
+    
