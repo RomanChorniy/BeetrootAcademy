@@ -1,0 +1,48 @@
+#comment{
+    background: url(../img/comment-bg.png) center / cover no-repeat;
+    height: 730px;
+    width: 100%;
+    max-width: 1770px;
+    margin: 0 auto;
+    .container{
+        padding-top: 120px;
+        &__title{
+            font-family: "Aleo-Regular";
+            font-size: 36px;
+            padding-bottom: 94px;
+            text-align: center;
+            color: #fff;
+        }
+        &__box{
+            display: flex;
+            width: 100%;
+            height: 285px;
+            color: #fff;
+        }
+    }
+    .box{
+        &__message{
+            background-color: #333333;
+            padding: 50px 50px 0px 60px;
+            flex: auto;
+            display: flex;
+            flex-direction: column;
+            font-family: 'Josefin Sans', sans-serif;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+    }
+    .message{
+        &__name{
+            text-transform: uppercase;
+            font-size: 20px;
+            padding-bottom: 50px;
+        }
+
+    }
+    .icon-quote-left{
+        position: relative;
+        top: -10px;
+        color: #5474fd;
+    }
+}   

@@ -1,0 +1,58 @@
+#choose-us{
+    background: url(../img/WCU-bg.png) center / cover no-repeat;
+    width: 100%;
+    max-width: 1770px;
+    height: 685px;
+    margin: 0 auto;
+    .container{
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: #fff;
+        &__box1{
+            font-family: "Aleo-Regular", serif;
+            width: 100%;
+            max-width: 540px;
+            height: auto;
+            line-height: 1.5;
+        }
+        .box1{          
+            &__title{
+                font-size: 36px;
+                padding-bottom: 60px;
+            }
+            &__text{
+                font-family: 'Josefin Sans', sans-serif;
+                font-size: 16px;
+                text-align: justify;
+                padding-bottom: 36px;
+            }
+            &__btn{
+                width: 225px;
+                height: 60px;
+                margin-top: 12px;
+                font-size: 16px;
+                text-transform: uppercase;
+                letter-spacing: 0.075rem;
+                color: #fff;
+                background-color: #496bfe;
+                border: none;
+            }
+
+        }
+        &__box2{
+            width: 100%;
+            max-width: 475px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            &__photo{
+                margin-bottom: 5px;
+                align-self: start;
+            }
+        }
+    }
+}

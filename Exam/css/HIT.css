@@ -1,0 +1,29 @@
+#how-it-works {
+  background-color: #333333;
+  font-family: "Aleo-Regular";
+  font-size: 36px;
+  color: #e8e8e8;
+}
+#how-it-works .container {
+  height: 337px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+#how-it-works .icon-search {
+  color: #5474fd;
+}
+#how-it-works .icon-check {
+  color: #ff6363;
+}
+#how-it-works .icon-like2 {
+  color: #00a2ff;
+}
+#how-it-works .line {
+  padding-top: 46px;
+  align-self: start;
+}
+#how-it-works .box1, #how-it-works .box3, #how-it-works .box5 {
+  margin: 0 -52px;
+}

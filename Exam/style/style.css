@@ -1,0 +1,433 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans:400,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 15px;
+}
+
+.container {
+  width: 100%;
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+.head {
+  width: 100%;
+  max-width: 1770px;
+  background: url(../img/head_bg.png) center/cover no-repeat;
+  margin: 0 auto;
+  font-family: "Josefin Sans", sans-serif;
+}
+.head .container {
+  text-align: center;
+  padding: 270px 0 135px;
+  color: #fff;
+}
+.head .container__title {
+  font-size: 48px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+}
+.head .container__subtitle {
+  font-size: 22px;
+  font-weight: normal;
+  letter-spacing: 0.31rem;
+  padding-bottom: 49px;
+}
+.head .container .form-search {
+  background-color: #fff;
+  width: 100%;
+  max-width: 650px;
+  height: 60px;
+  margin: 0 auto;
+  border: 2px solid #fff;
+  display: flex;
+}
+.head .container .form-search__textfield {
+  text-align: center;
+  flex: auto;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.2rem;
+  border: none;
+  outline: none;
+}
+.head .container .form-search__textfield:focus {
+  transition: ease-in-out 0.5s;
+  font-size: 16px;
+  color: #5474fd;
+}
+.head .container .form-search__btn {
+  width: 100%;
+  max-width: 146px;
+  background-color: #5474fd;
+  color: #fff;
+  border: none;
+  font-family: "Aleo-Regular", serif;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  position: relative;
+}
+.head .container .form-search__btn .icon-search {
+  font-size: 21px;
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.head .container .form-search__btn:hover {
+  background: linear-gradient(to bottom, #378de5 5%, #79bbff 100%);
+}
+.head .container .form-search__btn:active {
+  position: relative;
+  margin: 3px 0;
+}
+.head .container .scroll {
+  padding-top: 120px;
+  font-size: 14px;
+  letter-spacing: 0.2rem;
+}
+.head .container .scroll__ico {
+  font-size: 39px;
+}
+.head .navbar {
+  width: 100%;
+  background-color: #5474fd;
+  color: #fff;
+}
+.head .navbar__container {
+  width: 100%;
+  height: 80px;
+  max-width: 1110px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.head .navbar .container__logo {
+  font-size: 24px;
+  text-transform: uppercase;
+}
+.head .navbar .container__navbox {
+  display: flex;
+  justify-content: space-between;
+  max-width: 525px;
+  width: 100%;
+}
+.head .navbar .navbox__link {
+  font-family: "Aleo-Regular", serif;
+  font-size: 14px;
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+  border-bottom: 2px solid transparent;
+}
+.head .navbar .navbox__link:hover {
+  border-bottom: 2px solid #fff;
+}
+
+@font-face {
+  font-family: "icomoon";
+  src: url("../fonts/icofonts/icomoon.eot?kfyc8t");
+  src: url("../fonts/icofonts/icomoon.eot?kfyc8t#iefix") format("embedded-opentype"), url("../fonts/icofonts/icomoon.ttf?kfyc8t") format("truetype"), url("../fonts/icofonts/icomoon.woff?kfyc8t") format("woff"), url("../fonts/icofonts/icomoon.svg?kfyc8t#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+[class^=icon-], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "icomoon" !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-twitter:before {
+  content: "";
+}
+
+.icon-facebook:before {
+  content: "";
+}
+
+.icon-facebook-f:before {
+  content: "";
+}
+
+.icon-pinterest:before {
+  content: "";
+}
+
+.icon-linkedin:before {
+  content: "";
+}
+
+.icon-quote-left:before {
+  content: "";
+}
+
+.icon-youtube-play:before {
+  content: "";
+}
+
+.icon-angle-down-circle:before {
+  content: "";
+}
+
+.icon-check:before {
+  content: "";
+}
+
+.icon-like2:before {
+  content: "";
+}
+
+.icon-search:before {
+  content: "";
+}
+
+@font-face {
+  font-family: "Aleo-Regular";
+  src: url("../fonts/Aleo-Font/aleo-regular-webfont.eot");
+  src: url("../fonts/Aleo-Font/aleo-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Aleo-Font/aleo-regular-webfont.woff2") format("woff2"), url("../fonts/Aleo-Font/aleo-regular-webfont.woff") format("woff"), url("../fonts/Aleo-Font/aleo-regular-webfont.ttf") format("truetype"), url("../fonts/Aleo-Font/aleo-regular-webfont.svg#aleoregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+#choose-us {
+  background: url(../img/WCU-bg.png) center/cover no-repeat;
+  width: 100%;
+  max-width: 1770px;
+  height: 685px;
+  margin: 0 auto;
+}
+#choose-us .container {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+}
+#choose-us .container__box1 {
+  font-family: "Aleo-Regular", serif;
+  width: 100%;
+  max-width: 540px;
+  height: auto;
+  line-height: 1.5;
+}
+#choose-us .container .box1__title {
+  font-size: 36px;
+  padding-bottom: 60px;
+}
+#choose-us .container .box1__text {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 16px;
+  text-align: justify;
+  padding-bottom: 36px;
+}
+#choose-us .container .box1__btn {
+  width: 225px;
+  height: 60px;
+  margin-top: 12px;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 0.075rem;
+  color: #fff;
+  background-color: #496bfe;
+  border: none;
+}
+#choose-us .container__box2 {
+  width: 100%;
+  max-width: 475px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+#choose-us .container__box2__photo {
+  margin-bottom: 5px;
+  align-self: start;
+}
+
+#how-it-works {
+  background-color: #333333;
+  font-family: "Aleo-Regular";
+  font-size: 36px;
+  color: #e8e8e8;
+  width: 100%;
+  max-width: 1770px;
+  margin: 0 auto;
+}
+#how-it-works .container {
+  height: 337px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+#how-it-works .icon-search {
+  color: #5474fd;
+}
+#how-it-works .icon-check {
+  color: #ff6363;
+}
+#how-it-works .icon-like2 {
+  color: #00a2ff;
+}
+#how-it-works .line {
+  padding-top: 46px;
+  align-self: start;
+}
+#how-it-works .box1, #how-it-works .box3, #how-it-works .box5 {
+  margin: 0 -52px;
+}
+
+#spain {
+  width: 100%;
+  max-width: 1770px;
+  margin: 0 auto;
+}
+#spain .container {
+  height: 100%;
+  position: relative;
+}
+#spain .spain-group1 {
+  background: url(../img/spain-bg1.png) center/cover no-repeat;
+  height: 700px;
+}
+#spain .spain-group1 .box {
+  position: absolute;
+  top: 32.714285%;
+  left: 0;
+}
+#spain .spain-group2 {
+  background: url(../img/spain-bg2.png) center/cover no-repeat;
+  height: 700px;
+}
+#spain .spain-group2 .box {
+  position: absolute;
+  top: 32.714285%;
+  right: 0;
+}
+#spain .box {
+  background-color: rgba(131, 131, 131, 0.9);
+  width: 100%;
+  max-width: 540px;
+  height: 370px;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 20px;
+  color: #fff;
+  padding: 50px 30px 0;
+}
+#spain .box__title {
+  padding: 31px 0;
+}
+#spain .box__text {
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: justify;
+  padding-bottom: 48px;
+}
+#spain .box__btn {
+  width: 255px;
+  height: 60px;
+  border: none;
+  color: #fff;
+  font-family: "Aleo-Regular";
+  font-size: 16px;
+  letter-spacing: 0.075rem;
+  background: #5474fd linear-gradient(45deg, #496bfe 0px, #496bfe 77px, rgba(73, 107, 254, 0) 77px, rgba(73, 107, 254, 0) 225px);
+}
+#spain .box__btn:hover {
+  background: #496bfe;
+  transition: 0.3s ease-in-out;
+}
+
+#comment {
+  background: url(../img/comment-bg.png) center/cover no-repeat;
+  height: 730px;
+  width: 100%;
+  max-width: 1770px;
+  margin: 0 auto;
+}
+#comment .container {
+  padding-top: 120px;
+}
+#comment .container__title {
+  font-family: "Aleo-Regular";
+  font-size: 36px;
+  padding-bottom: 94px;
+  text-align: center;
+  color: #fff;
+}
+#comment .container__box {
+  display: flex;
+  width: 100%;
+  height: 285px;
+  color: #fff;
+}
+#comment .box__message {
+  background-color: #333333;
+  padding: 50px 50px 0px 60px;
+  flex: auto;
+  display: flex;
+  flex-direction: column;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+}
+#comment .message__name {
+  text-transform: uppercase;
+  font-size: 20px;
+  padding-bottom: 50px;
+}
+#comment .icon-quote-left {
+  position: relative;
+  top: -10px;
+  color: #5474fd;
+}
+
+#footerbox {
+  background-color: #232323;
+  height: 270px;
+  width: 100%;
+  max-width: 1770px;
+  margin: 0 auto;
+}
+#footerbox .container {
+  padding-top: 117px;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 16px;
+  color: #fff;
+  text-align: center;
+}
+#footerbox .container__title {
+  text-transform: uppercase;
+  font-size: 24px;
+  padding-bottom: 16px;
+}
+#footerbox .container__social {
+  padding-top: 29px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 166px;
+  margin: 0 auto;
+}
+#footerbox .container__social span:hover {
+  color: #5474fd;
+}

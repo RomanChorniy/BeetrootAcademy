@@ -1,0 +1,32 @@
+#how-it-works{
+    background-color: #333333;
+    font-family: "Aleo-Regular";
+    font-size: 36px;
+    color: #e8e8e8;
+    width: 100%;
+    max-width: 1770px;
+    margin: 0 auto;
+    .container{
+        height: 337px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center; 
+    }
+    .icon-search{
+        color: #5474fd;
+    }
+    .icon-check{
+        color: #ff6363;
+    }
+    .icon-like2{
+        color: #00a2ff;
+    }
+    .line{
+        padding-top: 46px;
+        align-self: start;
+    }
+    .box1, .box3, .box5{
+        margin: 0 -52px;
+    }
+}
