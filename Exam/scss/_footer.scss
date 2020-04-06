@@ -1,0 +1,33 @@
+#footerbox{
+    background-color: #232323;
+    height: 269px;
+    width: 100%;
+    max-width: 1770px;
+    margin: 0 auto;
+    .container{
+        padding-top: 122px;
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 17px;
+        color: #fff;
+        text-align: center;
+
+        &__title{
+            text-transform: uppercase;
+            font-size: 25px;
+            padding-bottom: 10px;
+            letter-spacing: 0.1rem;
+            font-weight: 400;
+        }
+        &__social{
+            padding-top: 29px;
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            max-width: 166px;
+            margin: 0 auto;
+            span:hover{
+                color: #5474fd;
+            }
+        }
+    }
+}
