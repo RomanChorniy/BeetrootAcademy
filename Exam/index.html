@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="style/style.css">
     <title>Bhromaon</title>
 </head>
@@ -18,12 +18,12 @@
                 <button type="submit" class="form-search__btn"><span>Search</span><span
                         class="icon-search"></span></button>
             </form>
-            <div class="scroll">
+            <a class="scroll" href="#navigation">
                 <p class="scroll__text">Scroll Down</p>
                 <span class="icon-angle-down-circle scroll__ico"></span>
-            </div>
+            </a>
         </div>
-        <div class="navbar">
+        <div class="navbar" id="navigation">
             <div class="navbar__container">
                 <h3 class="container__logo">Bhromaon</h3>
                 <nav class="container__navbox">
@@ -33,6 +33,23 @@
                     <a href="#footerbox" class="navbox__link">Contact Us</a>
                 </nav>
             </div>
+            <!-- Burger menu -->
+            <div class="header__burger">
+                <p class="header__burger__title">Bhromaon</p>
+                <input type="checkbox" id="check-menu">
+                <label for="check-menu"></label>
+                <div class="burger-line first"></div>
+                <div class="burger-line second"></div>
+                <div class="burger-line third"></div>
+                <div class="burger-line fourth"></div>
+                <nav class="main-menu">
+                    <a href="#choose-us" class="menu__link">Who We Are</a>
+                    <a href="#how-it-works" class="menu__link">What We Do</a>
+                    <a href="#spain" class="menu__link">Travel with us</a>
+                    <a href="#footerbox" class="menu__link">Contact Us</a>
+                </nav>
+            </div>
+            <!-- end -->
         </div>
     </header>
     <section id="choose-us">
@@ -58,16 +75,18 @@
                 <span class="icon-search"></span>
                 <p>Search Places</p>
             </div>
-            <!-- <div class="box2"> -->
             <img class="line" src="img/dashline.svg" alt="">
-            <!-- </div> -->
+            <div class="arrow">
+                <span class="icon-angle-down-circle"></span>
+            </div>
             <div class="box3">
                 <span class="icon-check"></span>
                 <p>Select Places</p>
             </div>
-            <!-- <div class="box4"> -->
             <img class="line" src="img/dashline.svg" alt="">
-            <!-- </div> -->
+            <div class="arrow">
+                <span class="icon-angle-down-circle"></span>
+            </div>
             <div class="box5">
                 <span class="icon-like2"></span>
                 <p>Book & Enjoy</p>

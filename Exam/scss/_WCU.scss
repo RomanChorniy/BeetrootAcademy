@@ -4,13 +4,17 @@
     max-width: 1770px;
     height: 685px;
     margin: 0 auto;
+    @media screen and (max-width: 650px){
+        div.container__box2{
+            display: none;
+        }
+    }
     .container{
         position: relative;
         top: 50%;
         transform: translateY(-50%);
         display: flex;
         justify-content: space-between;
-        align-items: center;
         color: #fff;
         &__box1{
             font-family: "Aleo-Regular", serif;
@@ -19,27 +23,38 @@
             height: auto;
             line-height: 1.5;
         }
-        .box1{          
+        .box1{
             &__title{
                 font-size: 36px;
-                padding-bottom: 60px;
+                padding: 70px 0 50px;
+                font-weight: 400;
+                @media screen and (max-width: 800px){
+                    padding: 0
+                }
             }
             &__text{
                 font-family: 'Josefin Sans', sans-serif;
-                font-size: 16px;
+                font-size: 17px;
                 text-align: justify;
-                padding-bottom: 36px;
+                padding: 0 11px 29px 0;
             }
             &__btn{
                 width: 225px;
                 height: 60px;
-                margin-top: 12px;
-                font-size: 16px;
+                margin-top: 16px;
+                font-size: 15px;
                 text-transform: uppercase;
                 letter-spacing: 0.075rem;
                 color: #fff;
                 background-color: #496bfe;
                 border: none;
+                &:hover{
+                    background:linear-gradient(to bottom, #378de5 5%, #79bbff 100%);
+                }
+                &:active{
+                    position:relative;
+                    transform: scale(0.98);
+                }
             }
 
         }
