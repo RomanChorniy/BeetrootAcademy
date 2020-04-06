@@ -495,6 +495,14 @@ body {
     transform: rotate(0deg);
   }
 }
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  #how-it-works .line {
+    margin-top: -50px;
+    flex-basis: 300px;
+    position: relative;
+    top: -123px;
+  }
+}
 
 #spain {
   width: 100%;
@@ -624,10 +632,17 @@ body {
   font-size: 15px;
   line-height: 1.74;
   font-weight: 200;
+  flex-basis: 665px;
 }
 @media screen and (max-width: 1058px) {
   #comment .box__message {
     padding: 2%;
+  }
+}
+@media screen and (max-width: 1058px) and (-ms-high-contrast: active), screen and (max-width: 1058px) and (-ms-high-contrast: none) {
+  #comment .box__message {
+    max-width: 445px;
+    background-color: transparent;
   }
 }
 #comment .message__name {
