@@ -39,6 +39,7 @@ body {
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 0.19rem;
+  padding-left: 3px;
 }
 .head .container__subtitle {
   font-size: 22px;
