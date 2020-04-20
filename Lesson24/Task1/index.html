@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5. Список продуктів</title>
+    <style>
+        body {
+            height: 100vh;
+            margin: 0;
+            background-repeat: no-repeat;
+            background: radial-gradient(ellipse at center, rgba(158, 112, 104, 1) 0%, rgba(245, 197, 191, 1) 32%, rgba(191, 148, 143, 1) 51%, rgba(163, 135, 132, 1) 71%, rgba(158, 136, 134, 1) 100%);
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+        }
+
+        header {
+            padding: 100px 0 50px;
+        }
+
+        ul {
+            margin: 0 auto;
+            display: inline-block;
+            text-align: left;
+            list-style: none;
+            padding: 0;
+            background-color: khaki;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        li {
+            padding: 10px;
+        }
+
+
+        li:hover {
+            background-color: gold;
+        }
+
+        input:checked+span {
+            text-decoration: line-through;
+            color: grey;
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Cписок подуктів</h1>
+    </header>
+    <ul>
+        <label for="iteam1">
+            <li><input type="checkbox" name="" id="iteam1"><span>Материнська плата</span></li>
+        </label>
+        <label for="iteam2">
+            <li><input type="checkbox" name="" id="iteam2"><span>Процесор</span></li>
+        </label>
+        <label for="iteam3">
+            <li><input type="checkbox" name="" id="iteam3"><span>Блок живлення</span></li>
+        </label>
+        <label for="iteam4">
+            <li><input type="checkbox" name="" id="iteam4"><span>Відеокарта</span></li>
+        </label>
+        <label for="iteam5">
+            <li><input type="checkbox" name="" id="iteam5"><span>Оперативна память</span></li>
+        </label>
+        <label for="iteam6">
+            <li><input type="checkbox" name="" id="iteam6"><span>Жорсткий диск</span></li>
+        </label>
+        <label for="iteam7">
+            <li><input type="checkbox" name="" id="iteam7"><span>Корпус</span></li>
+        </label>
+        <label for="iteam8">
+            <li><input type="checkbox" name="" id="iteam8"><span>Стабілізатор напруги</span></li>
+        </label>
+    </ul>
+</body>
+
+</html>

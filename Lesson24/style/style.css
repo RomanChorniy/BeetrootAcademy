@@ -12,7 +12,6 @@ margin: 0 auto;
 text-align: center;
 }
 .title {
-    position: relative;
     font-weight: normal;
     color: #8f0f1c;
     text-align: center;
@@ -21,27 +20,20 @@ text-align: center;
 }
 #beetroot_img {
 width: 57%;
-margin: -57px 0;
 }
 .lesson_list {
     list-style-type: none;
     padding: 0%;
-    margin: auto;
-    display: flex;
-    width: 500px;
-    height: 300px;
-    flex-flow: row wrap;
-    justify-content: center;
     }
 .lesson_list .list_item {
-    box-sizing: border-box;
-    margin: 2px;
     padding: 20px 30px;
-    width: 32%;
     font-family: Arial, sans-serif;
     font-size: 20px;
     border-bottom: 1px solid #8f0f1c;
+    outline-style: solid;
+    outline-color:white;
     background-color: #8f0f1c;
+    margin: 0% 30%;
     }
 .lesson_list .list_item:last-child {
     border-bottom: none;
