@@ -32,21 +32,27 @@ btnOpen.setAttribute('onclick', 'openModal()');
 // створюю і додаю мадальне вікно.
 const modalbg = document.createElement('div');
 document.body.append(modalbg);
-modalbg.style.display = 'none';
-modalbg.style.width = '100vw';
-modalbg.style.height = '100vh';
-modalbg.style.zIndex = 1;
-modalbg.style.backgroundColor = 'rgba(0,0,0,0.8)';
-modalbg.style.position = 'absolute';
-modalbg.style.top = 0;
-modalbg.style.left = 0;
+const modalbgStyle = {
+    display: 'none',
+    width: '100vw',
+    height: '100vh',
+    zIndex: 1,
+    backgroundColor: 'rgba(0,0,0,0.8)',
+    position: 'absolute',
+    top: 0,
+    left: 0,
+}
+Object.assign(modalbg.style, modalbgStyle);
 
 const modalWind = document.createElement('div');
 modalbg.append(modalWind);
-modalWind.style.maxWidth = '400px';
-modalWind.style.backgroundColor = 'white';
-modalWind.style.margin = '100px auto';
-modalWind.style.padding = '10px';
+const modalWindStyle = {
+    maxWidth: '400px',
+    backgroundColor: 'white',
+    margin: '100px auto',
+    padding: '10px',
+}
+Object.assign(modalWind.style, modalWindStyle);
 modalWind.innerText = 'МОДАЛЬНЕ ВІКНО. Щоб закрити дане вікно натисніть на кнопку "Закрити".';
 
 const btnClose = document.createElement('button');
