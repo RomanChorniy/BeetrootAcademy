@@ -7,8 +7,6 @@
 // get-свойство, возвращающее диаметр окружности;
 // метод, вычисляющий площадь окружности;
 // метод, вычисляющий длину окружности.
-let kolo = new Circle(5);
-
 class Circle {
     constructor(radius) {
         this.radius = radius
@@ -21,7 +19,6 @@ class Circle {
     }
     set newRadius(rad) {
         this.radius = rad;
-        return console.log(this.radius);
 
     }
     square() {
@@ -31,6 +28,8 @@ class Circle {
         return (2 * 3.14 * this.radius).toFixed(2);
     }
 }
+
+let kolo = new Circle(5);
 // Продемонстрировать работу свойств и методов.
 console.log(`Radius = ${kolo.radiusValue} ;`);
 kolo.newRadius = 50;
@@ -47,9 +46,9 @@ console.log(`Longiyude = ${kolo.longitude()} ;`);
 // текст выводится до тех пор, пока в маркере есть чернила; один не пробельный символ – 
 // это 0,5% чернил в маркере).
 class Marker {
-    constructor(color) {
+    constructor(color, inkTankFill = 100) {
         this.color = color;
-        this.inkTankFill = 100;
+        this.inkTankFill = inkTankFill;
     }
     print(text) {
         // Рахую кількість букв в тексті:
@@ -58,12 +57,13 @@ class Marker {
             if (text[i] !== " ") bykvuYText++;
         }
         // Друк тексту
-        while (this.inkTankFill > (bykvuYText * 0.5)) {
+        if (this.inkTankFill >= (bykvuYText * 0.5)) {
             let textArr = `<span style="color: ${this.color};">${text}.</span>`;
             document.write(textArr);
             // Відраховую кількість затраченого чорнила на текс.
             this.inkTankFill -= bykvuYText * 0.5;
         }
+        else console.log('fill the tank');
     }
 }
 
