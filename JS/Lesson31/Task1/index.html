@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS.JQuery</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,900&display=swap" rel="stylesheet">
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/homework.js"></script>
+</head>
+
+<body>
+    <section class="box">
+        <nav class="box__nav">
+            <a href="#box__info" class="nav__group1 active">
+                <svg width="24px" height="24px">
+                    <defs>
+                        <filter id="Filter_0">
+                            <feFlood flood-color="rgb(255, 255, 255)" flood-opacity="1" result="floodOut" />
+                            <feComposite operator="atop" in="floodOut" in2="SourceGraphic" result="compOut" />
+                            <feBlend mode="normal" in="compOut" in2="SourceGraphic" />
+                        </filter>
+
+                    </defs>
+                    <g filter="url(#Filter_0)">
+                        <path fill-rule="evenodd" fill="rgb(189, 195, 199)"
+                            d="M20.400,18.999 L16.780,18.999 L12.990,22.789 L12.990,22.789 C12.736,23.043 12.386,23.200 12.000,23.200 C11.613,23.200 11.263,23.043 11.010,22.789 L11.010,22.789 L7.220,18.999 L3.600,18.999 C2.053,18.999 0.800,17.746 0.800,16.200 L0.800,3.599 C0.800,2.053 2.053,0.800 3.600,0.800 L20.400,0.800 C21.946,0.800 23.200,2.053 23.200,3.599 L23.200,16.200 C23.200,17.746 21.946,18.999 20.400,18.999 ZM20.400,4.999 C20.400,4.226 19.773,3.599 19.000,3.599 L5.000,3.599 C4.226,3.599 3.600,4.226 3.600,4.999 L3.600,14.799 C3.600,15.572 4.226,16.200 5.000,16.200 L6.400,16.200 L7.800,16.200 C8.186,16.200 8.536,16.356 8.790,16.610 L8.790,16.610 L12.000,19.819 L15.210,16.610 L15.210,16.610 C15.463,16.356 15.813,16.200 16.200,16.200 L17.600,16.200 L19.000,16.200 C19.773,16.200 20.400,15.572 20.400,14.799 L20.400,4.999 ZM16.200,13.399 L7.800,13.399 C7.026,13.399 6.400,12.773 6.400,11.999 C6.400,11.226 7.026,10.599 7.800,10.599 L16.200,10.599 C16.973,10.599 17.600,11.226 17.600,11.999 C17.600,12.773 16.973,13.399 16.200,13.399 ZM16.200,9.199 L7.800,9.199 C7.026,9.199 6.400,8.573 6.400,7.799 C6.400,7.026 7.026,6.399 7.800,6.399 L16.200,6.399 C16.973,6.399 17.600,7.026 17.600,7.799 C17.600,8.573 16.973,9.199 16.200,9.199 Z" />
+                    </g>
+                </svg>
+                <p>INFORMATION</p>
+            </a>
+            <a href="#box__rating" class="nav__group2">
+                <svg width="19px" height="21px">
+                    <defs>
+                        <filter id="Filter_0">
+                            <feFlood flood-color="rgb(183, 186, 205)" flood-opacity="1" result="floodOut" />
+                            <feComposite operator="atop" in="floodOut" in2="SourceGraphic" result="compOut" />
+                            <feBlend mode="normal" in="compOut" in2="SourceGraphic" />
+                        </filter>
+
+                    </defs>
+                    <g filter="url(#Filter_0)">
+                        <path fill-rule="evenodd" opacity="0.702" fill="rgb(189, 195, 199)"
+                            d="M18.993,11.308 C18.993,13.986 16.868,16.157 14.246,16.157 C12.692,16.157 11.332,15.382 10.472,14.200 L10.449,14.217 L9.500,12.924 L8.550,14.217 L8.537,14.207 C7.671,15.384 6.306,16.157 4.753,16.157 C2.132,16.157 0.007,13.986 0.007,11.308 C0.007,10.216 0.373,9.218 0.969,8.408 L0.956,8.398 C0.956,8.398 7.918,-0.008 9.500,-0.008 C11.082,-0.008 18.043,8.398 18.043,8.398 L18.030,8.408 C18.626,9.218 18.993,10.216 18.993,11.308 ZM7.918,17.773 L7.918,16.157 C7.918,15.265 8.626,14.540 9.500,14.540 C10.374,14.540 11.082,15.265 11.082,16.157 L11.082,17.773 C11.956,17.773 12.664,18.497 12.664,19.390 C12.664,20.282 11.956,21.007 11.082,21.007 L7.918,21.007 C7.044,21.007 6.336,20.282 6.336,19.390 C6.336,18.497 7.044,17.773 7.918,17.773 Z" />
+                    </g>
+                </svg>
+                <p>RATING INFO</p>
+            </a>
+            <a href="#box__store" class="nav__group3">
+                <svg width="20px" height="20px">
+                    <defs>
+                        <filter id="Filter_0">
+                            <feFlood flood-color="rgb(183, 186, 205)" flood-opacity="1" result="floodOut" />
+                            <feComposite operator="atop" in="floodOut" in2="SourceGraphic" result="compOut" />
+                            <feBlend mode="normal" in="compOut" in2="SourceGraphic" />
+                        </filter>
+
+                    </defs>
+                    <g filter="url(#Filter_0)">
+                        <path fill-rule="evenodd" opacity="0.702" fill="rgb(189, 195, 199)"
+                            d="M19.946,7.765 L19.970,7.771 L17.470,19.021 L17.446,19.015 C17.321,19.574 16.846,19.999 16.250,19.999 L3.750,19.999 C3.154,19.999 2.679,19.574 2.554,19.015 L2.530,19.021 L0.030,7.771 L0.054,7.765 C0.034,7.677 -0.000,7.594 -0.000,7.500 C-0.000,6.809 0.560,6.250 1.250,6.250 L3.750,6.250 C3.750,2.798 6.548,-0.001 10.000,-0.001 C13.452,-0.001 16.250,2.798 16.250,6.250 L18.750,6.250 C19.440,6.250 20.000,6.809 20.000,7.500 C20.000,7.594 19.966,7.677 19.946,7.765 ZM10.000,2.499 C7.929,2.499 6.250,4.178 6.250,6.250 L13.750,6.250 C13.750,4.178 12.071,2.499 10.000,2.499 ZM15.000,11.250 C14.310,11.250 13.750,10.690 13.750,9.999 L13.750,8.750 L6.250,8.750 L6.250,9.999 C6.250,10.690 5.690,11.250 5.000,11.250 C4.310,11.250 3.750,10.690 3.750,9.999 L3.750,8.750 L2.808,8.750 L4.753,17.499 L15.247,17.499 L17.192,8.750 L16.250,8.750 L16.250,9.999 C16.250,10.690 15.690,11.250 15.000,11.250 Z" />
+                    </g>
+                </svg>
+                <p>WHERE TO BUY</p>
+            </a>
+        </nav>
+        <div id="box__info" class="box__game container active">
+            <div class="game__group1">
+                <img src="img/gamelogo.png" alt="">
+                <div class="game__userLike">
+                    <svg class="star star_yellow" width="20px" height="19px">
+                        <g>
+                            <path fill-rule="evenodd"
+                                d="M5.335,18.302 C7.055,17.487 10.050,16.067 10.050,16.067 C10.050,16.067 12.993,17.448 14.865,18.327 C14.258,18.042 16.431,19.568 16.230,17.451 C16.038,15.415 15.729,12.145 15.729,12.145 C15.729,12.145 17.876,9.754 19.217,8.261 C18.657,8.884 20.757,7.182 18.802,6.813 C16.825,6.441 13.282,6.179 13.282,6.179 C13.282,6.179 11.873,2.924 10.833,1.124 C11.317,1.962 10.284,-0.727 9.246,1.085 C8.214,2.885 6.702,6.193 6.702,6.193 C6.702,6.193 3.266,6.461 1.288,6.840 C2.063,6.692 -0.522,6.760 0.791,8.215 C2.131,9.698 4.361,12.168 4.361,12.168 C4.361,12.168 4.063,15.452 3.877,17.487 C3.925,16.961 3.201,19.313 5.335,18.302 Z" />
+                        </g>
+                    </svg>
+                    <svg class="star star_yellow" width="20px" height="19px">
+                        <g>
+                            <path fill-rule="evenodd"
+                                d="M5.335,18.302 C7.055,17.487 10.050,16.067 10.050,16.067 C10.050,16.067 12.993,17.448 14.865,18.327 C14.258,18.042 16.431,19.568 16.230,17.451 C16.038,15.415 15.729,12.145 15.729,12.145 C15.729,12.145 17.876,9.754 19.217,8.261 C18.657,8.884 20.757,7.182 18.802,6.813 C16.825,6.441 13.282,6.179 13.282,6.179 C13.282,6.179 11.873,2.924 10.833,1.124 C11.317,1.962 10.284,-0.727 9.246,1.085 C8.214,2.885 6.702,6.193 6.702,6.193 C6.702,6.193 3.266,6.461 1.288,6.840 C2.063,6.692 -0.522,6.760 0.791,8.215 C2.131,9.698 4.361,12.168 4.361,12.168 C4.361,12.168 4.063,15.452 3.877,17.487 C3.925,16.961 3.201,19.313 5.335,18.302 Z" />
+                        </g>
+                    </svg>
+                    <svg class="star star_yellow" width="20px" height="19px">
+                        <g>
+                            <path fill-rule="evenodd"
+                                d="M5.335,18.302 C7.055,17.487 10.050,16.067 10.050,16.067 C10.050,16.067 12.993,17.448 14.865,18.327 C14.258,18.042 16.431,19.568 16.230,17.451 C16.038,15.415 15.729,12.145 15.729,12.145 C15.729,12.145 17.876,9.754 19.217,8.261 C18.657,8.884 20.757,7.182 18.802,6.813 C16.825,6.441 13.282,6.179 13.282,6.179 C13.282,6.179 11.873,2.924 10.833,1.124 C11.317,1.962 10.284,-0.727 9.246,1.085 C8.214,2.885 6.702,6.193 6.702,6.193 C6.702,6.193 3.266,6.461 1.288,6.840 C2.063,6.692 -0.522,6.760 0.791,8.215 C2.131,9.698 4.361,12.168 4.361,12.168 C4.361,12.168 4.063,15.452 3.877,17.487 C3.925,16.961 3.201,19.313 5.335,18.302 Z" />
+                        </g>
+                    </svg>
+                    <svg class="star star_yellow" width="20px" height="19px">
+                        <g>
+                            <path fill-rule="evenodd"
+                                d="M5.335,18.302 C7.055,17.487 10.050,16.067 10.050,16.067 C10.050,16.067 12.993,17.448 14.865,18.327 C14.258,18.042 16.431,19.568 16.230,17.451 C16.038,15.415 15.729,12.145 15.729,12.145 C15.729,12.145 17.876,9.754 19.217,8.261 C18.657,8.884 20.757,7.182 18.802,6.813 C16.825,6.441 13.282,6.179 13.282,6.179 C13.282,6.179 11.873,2.924 10.833,1.124 C11.317,1.962 10.284,-0.727 9.246,1.085 C8.214,2.885 6.702,6.193 6.702,6.193 C6.702,6.193 3.266,6.461 1.288,6.840 C2.063,6.692 -0.522,6.760 0.791,8.215 C2.131,9.698 4.361,12.168 4.361,12.168 C4.361,12.168 4.063,15.452 3.877,17.487 C3.925,16.961 3.201,19.313 5.335,18.302 Z" />
+                        </g>
+                    </svg>
+                    <svg class="star" width="20px" height="19px">
+                        <g>
+                            <path fill-rule="evenodd"
+                                d="M5.335,18.302 C7.055,17.487 10.050,16.067 10.050,16.067 C10.050,16.067 12.993,17.448 14.865,18.327 C14.258,18.042 16.431,19.568 16.230,17.451 C16.038,15.415 15.729,12.145 15.729,12.145 C15.729,12.145 17.876,9.754 19.217,8.261 C18.657,8.884 20.757,7.182 18.802,6.813 C16.825,6.441 13.282,6.179 13.282,6.179 C13.282,6.179 11.873,2.924 10.833,1.124 C11.317,1.962 10.284,-0.727 9.246,1.085 C8.214,2.885 6.702,6.193 6.702,6.193 C6.702,6.193 3.266,6.461 1.288,6.840 C2.063,6.692 -0.522,6.760 0.791,8.215 C2.131,9.698 4.361,12.168 4.361,12.168 C4.361,12.168 4.063,15.452 3.877,17.487 C3.925,16.961 3.201,19.313 5.335,18.302 Z" />
+                        </g>
+                    </svg>
+                </div>
+            </div>
+            <div class="game__group2">
+                <div class="group2__head">
+                    <div>
+                        <h2 class="game__name">FarCry 4</h2>
+                        <h3 class="game__releas">First Released Nov 17,2014</h3>
+                    </div>
+                    <div class="game__rating">7.8
+                        <svg class="ratcircle" width="65px" height="69px">
+                            <image x="0px" y="0px" width="65px" height="69px"
+                                xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAABJCAYAAACKJP4DAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAABmJLR0QA/wD/AP+gvaeTAAAAB3RJTUUH5AUFFhwQXVQejQAABPlJREFUeNrlnFtsFFUYx39fbeXBC5QExdKkaEwhJkVjsS6Il5iKfUAUojaKiSYGMVrDJV4S44MPmhgSRJBqAF8wqAQv0IYYwFtCuBQKSqgG6YvWlIqWUOrlAdH5fDhncfh2l25hu61z/smm5//Nmdnz2zlz5tLzjfDtl4ACigi+DOJjiPoyvo6v65fFy0KUtY4QvQr6ooj+Dfq7iPZBdEzQLkSPCHoIon0ievTs9aMzZRv/r1252oRpf4xLXLmU4qjE/y0Fyv3nGmC6qfcDsA34FNgOnCpGo0aKrgaeBFqBX4DVQF0o8HGNBp4A9gK7gNnge3OBJEU65i8C/UdEy0AvE9FyiMYLWoXoJEGnQFQnohUDHPP7QRcJ0a5CHPPFgj87LgpEseXei04HnSmic0Frcgx4KkTrEH1O0OMXAj/Suv1u4GVgCjAXaM7aW+ExoNPXOW+NNPi4NgFNuDPC8izLy4GPgTeBUUmDT2sPsAR4BDfwWTUBO4Arkwif1nvADODZLMvqgJ24a4dEwqe1zMPuMfFrcT3j+iTDA7TjxoKPTHw88BlwXZLh03oAWGdi43CXyJVJhwd32ltlYpXAZuDipMMDPIO7D4irFjc+JB4e3A3RBybWxDkuhJIED/AwmWeBd3ADYeLhARYaXw68EQp8O7DYxBqBO0KAB7enW03stVDgAd4y/magPhT4bcBKE3spFHjI7Pq3E3smmHT4L4A1JjY/FHiArcY/iH/4EQL8JuBQzF8ONIQCn/4B4poVErzt+vUhwbcBR2N+IlAZCjzAAeNrQ4L/3vjJIcEfMX5SSPCdxleHBP+z8VeFBH/C+LEhwf9h/CUhwZ82viwk+DLjT4cEf6nxf4YEP9b4EyHBX2H8ryHBTzT+x5Dgq43vDAn+BuMPhgR/k/HtocCngAkx/xPQHQp8g/HbIZzHWHOM3xIK/BzcjM60fsM/0AwB/m7jN+Ln8Scd/k5ggYmtTReSDn+P8TuAfSHAzwQWmdgrcZNk+KeMb8fNzkw8/ELgXhN7wVZKIvxUMmdfbQS+CgF+hfF9ZE5PSyT8+2Tm6s0Hjg0EX9C0rWHQ28BDJtaMS0XJqjS84OaurOT/qRW4ubdxfY1LT8mpUg++Fnjcx0aReVU0krUal3wYVzdutP/rXCuWAK/HwPEb2jDcRHlqQxbwXtwtbPdAK5fgMhV6TbwRl+NWO9x0OXSjb1+jiR/H3ch8l89GSoCDuMl59peaBuxngONmGLQEN8timol3A7cB3+S7ofSAdxg3N7U9S51luLStecMMPc+3I1v2xAHf/sOD2WD8VNcD3EpmvgrALcB63PiQKjJ0yn/vet8Oq1U+3jPYDedKJL5f0DWg5TkSiZsF/RzRzQVOJI7Xu0+I6kX06RxvTugTdAHoh0ORRT0OdCmijwoqBj69kQ7QTwTdimhbAeBToA15ZFG/67Ooe4c6hXyGoMuBqQOkkPcIURtoh4h2gnYJ2oNovxCdBI1EtAR0jIiOhqjC589XC1oDUSrP/PnFQrSzmPnzAswGfd7nuA9V/jw54HeDLhXRVr/nC/LCkHxvbBRo8QNLCpex1D/YAWaQ6sddeab897acISiQzudtKXv9pwl3JTULuAuoKkB7unBPW7bgHi8P6dtSLuRVMadwe6PF+wm4vVSD+49oFVCBe/HHGNw9hAIncXu1x8N2Ah1kzo8dcv0L1tRikPk66GIAAAAASUVORK5CYII=" />
+                        </svg>
+                    </div>
+                </div>
+                <p class="game__description">In Far Cry 4, players find themselves in Kyrat, a breathtaking, perilous
+                    and
+                    wild region of the Hima
+                    layas struggling under the regime of a despotic self-appointed king.</p>
+                <div class="game__price">
+                    <div>
+                        <p>20% OFF!</p>
+                        <p>$59.96</p>
+                    </div>
+                    <button id="btnBuy" type="submit">BUY IT NOW</button>
+                </div>
+
+            </div>
+
+        </div>
+        <div id="box__rating" class="container">rating</div>
+        <div id="box__store" class="container">store</div>
+    </section>
+
+</body>
+
+</html>
