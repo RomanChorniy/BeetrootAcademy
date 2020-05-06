@@ -1,0 +1,40 @@
+.calc__box{
+    margin: 50px auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    background-color: #11318a;
+    border: 3px solid black;
+    width: 500px;
+    border-radius: 15px;
+}
+.monitor{
+    height: 100px;
+    text-align: right;
+    font-size: 28px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    color: bisque;
+    background-color: #198a37;
+    border-radius: 15px;
+    border: 2px solid black;
+    line-height: 100px;
+    padding: 10px;
+}
+.klaviatura{
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+button{
+    flex-basis: 80px;
+    height: 80px;
+    margin: 10px;
+    font-weight: 700;
+    font-size: 20px;
+}
+.numb, .operation{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
