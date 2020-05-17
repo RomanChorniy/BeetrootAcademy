@@ -1,0 +1,20 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+}
+body{
+    background-color: #153f7d;
+}
+#search{
+    margin: 100px auto 0;
+    padding: 10px;
+    background-color: cornflowerblue;
+    width: 300px;
+    height: 100px;
+}
+#search button:last-child{
+    margin: 30px auto 0;
+    display: block;
+}

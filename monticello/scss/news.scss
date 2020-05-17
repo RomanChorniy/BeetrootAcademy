@@ -1,0 +1,15 @@
+#news{
+    padding: 140px 215px 209px;
+    background: url(../img/news/imgBg.png) center / cover no-repeat;
+    hr{
+        background-color: white;
+        margin: 0 auto 30px;
+    }
+    .news{
+        &__title{
+            font-family: 'gothamMedium', sans-serif;
+            font-weight: normal;
+            color: white;
+        }
+    }
+}
