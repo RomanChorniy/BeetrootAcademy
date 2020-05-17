@@ -1,0 +1,91 @@
+#header__slider{
+    z-index: 2;
+    position: relative;
+    height: 800px;
+    overflow: hidden;
+    @media screen and (max-width: 760px){
+        height: 100vh;
+    }
+    .slider__cart{
+        height: 800px;
+        @media screen and (max-width: 760px) {
+            padding: 0 30px;
+            height: 100vh;
+        }
+    }
+    .cart1{
+        background: url(../img/header/header_bg.png) center / cover no-repeat;
+    }
+    .cart2{
+        background: url(../img/header/header_bg2.png) center / cover no-repeat;
+    }
+    .cart3{
+        background: url(../img/header/header_bg3.png) center / cover no-repeat;
+    }
+    .cart4{
+        background: url(../img/header/header_bg4.png) center / cover no-repeat;
+    }
+    .cart5{
+        background: url(../img/header/header_bg5.png) center / cover no-repeat;
+    }
+    .cart1__title{
+        padding-top: 350px;
+        font-family: 'gothambold1', sans-serif;
+        font-size: 80px;
+        color: white;
+        text-align: center;
+        letter-spacing: 10px;
+    }
+    .cart1__subtitle{
+        font-family: 'GothamBook', sans-serif;
+        font-size: 18px;
+        font-weight: normal;
+        color: white;
+        text-align: center;
+        padding-top: 19px;
+        letter-spacing: 5px;
+    }
+    @media screen and (max-width: 1500px){
+        .cart1__title{
+            font-size: calc(24px + 56 * ((100vw - 320px) / (1600 - 320)));
+        }
+        .cart1__subtitle{
+            font-size: calc(10px + 8 * ((100vw - 320px) / (1600 - 320)));
+        }
+    }
+    .slick-track{
+        display: block;
+        align-items: center;
+        overflow: hidden;
+    }
+    .slick-arrow{
+        display: none;
+    }
+    .slick-dots{
+        position: absolute;
+        top: 50%;
+        right: 36px;
+        transform: translate(-50%, -50%);
+
+        li{
+            list-style: none;
+            margin: 33px 0;
+            &.slick-active button{
+                background-color: white;
+                border: 1px solid white;
+            }
+        }
+        button{
+            font-size: 0;
+            width: 9px;
+            height: 9px;
+            background-color: transparent;
+            border: 1px solid white;
+            border-radius: 50%;
+        }
+        @media screen and (max-width: 760px) {
+            right: 15px;
+        }
+    }
+
+}
