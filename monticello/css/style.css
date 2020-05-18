@@ -178,6 +178,11 @@ hr {
   left: 50%;
   transform: translateX(-50%);
 }
+@media screen and (max-width: 1500px) {
+  #header .header__btnDown {
+    bottom: 161px;
+  }
+}
 #header .header__btnDown:hover {
   background-color: white;
   color: #5d95f1;
@@ -268,6 +273,15 @@ hr {
 }
 #header .burger__nav__link:hover {
   filter: brightness(0.7);
+}
+#header #about-us_ankor {
+  position: absolute;
+  top: 110px;
+  left: 0;
+  z-index: 5;
+  width: 300px;
+  height: 0px;
+  background-color: red;
 }
 
 #projects {
@@ -581,14 +595,6 @@ hr {
   height: 524px;
   color: white;
 }
-#footer .footer__nav {
-  display: none;
-  position: absolute;
-  width: 100%;
-  max-width: 770px;
-  margin: 0 auto;
-  top: -25px;
-}
 #footer .footer__box {
   margin: 0 auto;
   max-width: 770px;
@@ -602,10 +608,6 @@ hr {
 }
 #footer .footer__box .box__social .social__logo {
   font-size: 54px;
-  cursor: pointer;
-}
-#footer .footer__box .box__social .social__logo:hover {
-  font-size: 56px;
 }
 #footer .footer__box .box__social .social__link {
   display: flex;
@@ -634,22 +636,6 @@ hr {
     flex-direction: column;
   }
 }
-#footer .nav__box {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  max-width: 770px;
-  margin: 0 auto;
-  padding-bottom: 5px;
-}
-#footer .nav__box__item {
-  display: inline-block;
-  font-family: "GothamBook", sans-serif;
-  font-size: 14px;
-}
-#footer .nav__box__item:hover {
-  text-decoration: underline;
-}
 #footer .link-item {
   display: inline-block;
   height: 40px;
@@ -670,7 +656,7 @@ hr {
   height: 800px;
   overflow: hidden;
 }
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 1500px) {
   #header__slider {
     height: 100vh;
   }
@@ -678,10 +664,16 @@ hr {
 #header__slider .slider__cart {
   height: 800px;
 }
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 1500px) {
   #header__slider .slider__cart {
     padding: 0 30px;
     height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  #header__slider .slider__cart .cart1__title {
+    padding-top: 0;
   }
 }
 #header__slider .cart1 {
@@ -737,6 +729,7 @@ hr {
   top: 50%;
   right: 36px;
   transform: translate(-50%, -50%);
+  width: 10px;
 }
 #header__slider .slick-dots li {
   list-style: none;

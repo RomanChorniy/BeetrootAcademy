@@ -4,15 +4,15 @@
     height: 524px;
     color: white;
     .footer{
-        &__nav{
-            display: none;
-            position: absolute;
-            width: 100%;
-            max-width: 770px;
-            margin: 0 auto;
-            top: -25px;
+        // &__nav{
+        //     display: none;
+        //     position: absolute;
+        //     width: 100%;
+        //     max-width: 770px;
+        //     margin: 0 auto;
+        //     top: -25px;
 
-        }
+        // }
         &__box{
             margin: 0 auto;
             max-width: 770px;
@@ -26,10 +26,10 @@
                     .social{
                         &__logo{
                             font-size: 54px;
-                            cursor: pointer;
-                            &:hover{
-                                font-size: 56px;
-                            }
+                            // cursor: pointer;
+                            // &:hover{
+                            //     font-size: 56px;
+                            // }
                         }
                         &__link{
                             display: flex;
@@ -37,7 +37,6 @@
                             max-width: 161px;
                             justify-content: space-between;
                         }
-
                     }
                 }
                 &__copyrights{
@@ -65,25 +64,25 @@
             }
         }
     }
-    .nav{
-        &__box{
-            display: flex;
-            justify-content: space-between;
-            width: 100%;
-            max-width: 770px;
-            margin: 0 auto;
-            padding-bottom: 5px;
-            &__item{
-                display: inline-block;
-                font-family: 'GothamBook', sans-serif;
-                font-size: 14px;
-                &:hover{
-                    text-decoration: underline;
-                }
-            }
-        }
+    // .nav{
+    //     &__box{
+    //         display: flex;
+    //         justify-content: space-between;
+    //         width: 100%;
+    //         max-width: 770px;
+    //         margin: 0 auto;
+    //         padding-bottom: 5px;
+    //         &__item{
+    //             display: inline-block;
+    //             font-family: 'GothamBook', sans-serif;
+    //             font-size: 14px;
+    //             &:hover{
+    //                 text-decoration: underline;
+    //             }
+    //         }
+    //     }
         
-    }
+    // }
     .link-item{
         display: inline-block;
         height: 40px;
