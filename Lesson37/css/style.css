@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+}
+.container{
+    background-color: darkgreen;
+    margin: 15px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.card{
+    width: 130px;
+    height: 200px;
+    background-color: bisque;
+    border-radius: 10px;
+    margin: 10px;
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.card:hover{
+    animation: showCard 1s ease;
+}
+.red{
+    fill    : red;
+}
+.card_red{
+    color: red;
+}
+.card::after{
+    content: '';
+    width: 130px;
+    height: 200px;
+    background:url(../img/back-red_large-1024x1024.png) center / cover no-repeat;
+    position: absolute;
+    border-radius: 10px;
+    z-index: -1;
+    transform: rotateY(180deg)
+}
+.card:hover .card::after{
+    animation: showCard1 1s ease;
+    z-index: 2;
+}
+
+@keyframes showCard{
+    from {transform: rotateY(0deg);}
+    to{transform: rotateY(180deg);}
+}
+@keyframes showCard1{
+    from {transform: rotateY(180deg);}
+    to{transform: rotateY(360deg);}
+}
