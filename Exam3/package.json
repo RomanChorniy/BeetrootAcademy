@@ -28,6 +28,7 @@
     "webpack-dev-server": "^3.11.0"
   },
   "dependencies": {
+    "easy-scroll": "^0.7.0",
     "jquery": "^3.5.1",
     "normalize.css": "^8.0.1",
     "slick-carousel": "^1.8.1"
