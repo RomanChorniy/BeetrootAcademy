@@ -14,13 +14,13 @@ $(document).ready(() => {
         $('.box2__text').css('transform', 'translateY(-' + hr + 'px)');
 
         //Section "What we do". Paralax on image.
-        let section4Speed = w / 1500 * p;
+        let section4Speed = w / 2500 * p;
         $('.analitic__image').css('transition', '1s cubic-bezier(0.19, 1, 0.22, 1)');
         $('.analitic__image').css('transform', 'translateY(-' + section4Speed + 'px)');
 
         //Section "contact us". Paralax on image.
-        let section6Speed = w / 1500 * p;
-        $('.contactUs__box2').css('top', '52%');
+        let section6Speed = w / 2500 * p;
+        $('.contactUs__box2').css('top', '30%');
         $('.contactUs__box2').css('transition', '1s cubic-bezier(0.19, 1, 0.22, 1)');
         $('.contactUs__box2').css('transform', 'translateY(-' + section6Speed + 'px)');
     });

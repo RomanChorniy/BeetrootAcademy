@@ -42,4 +42,12 @@ $(document).ready(() => {
         $('.logo').removeClass('menu__open');
         $('.menu__page').css('transform', 'translateY(-100%)');
     });
+
+    // Contact Us block.
+    $('.openContactUs').click(() => {
+        $('.contactUs__form').css('display', 'block');
+    });
+    $('.boxCloseBtn').click(() => {
+        $('.contactUs__form').css('display', 'none');
+    });
 });

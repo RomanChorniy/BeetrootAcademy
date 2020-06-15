@@ -11,7 +11,12 @@
 <body>
     <div class="container">
         <section id="start">
-            <div class="slider"></div>
+            <div class="slider__start">
+                <div class="slider__start_item1 item"></div>
+                <div class="slider__start_item2 item"></div>
+                <div class="slider__start_item3 item"></div>
+                <div class="slider__start_item4 item"></div>
+            </div>
             <div class="header">
                 <div class="logo">
                     <div class="logo__menu">
@@ -154,12 +159,26 @@
             <div class="contactUs__box1">
                 <h3 class="box1__title">Any questions? Get in touch with</h3>
                 <h3 class="box1__title_red">our team</h3>
-                <a class="box1__btn" href="http://">Contact us</a>
+                <button class="box1__btn openContactUs" type="button">Contact us</button>
             </div>
             <div class="contactUs__box2__frame">
                 <div class="contactUs__box2"></div>
             </div>
-
+            <div class="contactUs__form">
+                <div class="form__box">
+                    <p class="boxCloseBtn">x</p>
+                    <h5 class="box__header">Let's <span>talk</span></h5>
+                    <p class="box__subtitle">Invest in a model set to redefine the travel industry or become a supplier
+                        today.</p>
+                    <form class="box__userForm" action="" method="POST">
+                        <input class="form__email" type="text" placeholder="Your email*">
+                        <input class="form__name" type="text" placeholder="Your name*">
+                        <textarea class="form__message" name="" id="" cols="30" rows="10"
+                            placeholder="Your massege*"></textarea>
+                        <button class="form__btn" type="button">Send massage</button>
+                    </form>
+                </div>
+            </div>
         </section>
         <section id="gallery">
             <div class="gallery__slider">

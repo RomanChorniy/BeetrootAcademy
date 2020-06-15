@@ -21,5 +21,29 @@ $(".box2__slideshow").slick({
 $(".gallery__slider").slick({
     arrows: false,
     slidesToShow: 3,
-    autoplay: true
+    autoplay: true,
+    responsive: [
+        {
+            breakpoint: 1390,
+            settings: {
+                slidesToShow: 2,
+            }
+        },
+        {
+            breakpoint: 900,
+            settings: {
+                slidesToShow: 1,
+            }
+        }]
+});
+
+//Section header. Slider settings.
+$(".slider__start").slick({
+    arrows: false,
+    slidesToShow: 1,
+    autoplay: true,
+    autoplaySpeed: 6000,
+    speed: 2000,
+    fade: true,
+    cssEase: 'linear'
 });
