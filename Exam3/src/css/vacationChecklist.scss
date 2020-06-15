@@ -1,0 +1,136 @@
+#vacationChecklist{
+    height: 845px;
+    .checklist{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 100%;
+    }
+    .box1{
+        flex: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: baseline;
+        padding-left: 8em;
+        &__tablo{
+            // margin: 0 auto;
+            display: flex;
+            font-weight: 300;
+            width: 413px;
+            justify-content: space-between;
+            padding-bottom: 88px;
+            .tablo__number{
+                font-size: 11vw;
+                color: #ff4e57;
+            }
+            .tablo__text{
+                font-size: 2.5vw;
+                width: 166px;
+                align-self: center;
+            }
+        }
+        &__controlPanel{
+            display: flex;
+            align-items: center;
+            height: 140px;
+            width: 90%;
+            // margin: 0 auto;
+            .controlPanel__btnBox{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                padding-right: 20px;
+                height: 100%;
+                .btn{
+                    display: block;
+                    text-align: center;
+                    line-height: 55px;
+                    border: 2px solid black;
+                    border-radius: 50%;
+                    font-size: 20px;
+                    height: 55px;
+                    width: 55px;
+                }
+                .controlPanel__btnUp{
+                    border: 2px solid #969384;
+                }
+                .btnBox__btnUp{
+                    transform: rotate(-90deg);
+                    border: none;
+                    background-color: white;
+                    
+                }
+                .btnBox__btnDown{
+                    transform: rotate(90deg);
+                    border: none;
+                    background-color: white;
+                }
+            }
+            .controlPanel__text{
+                flex: auto;
+                .text__head{
+                    color: #ff4e57;
+                    font-weight: 600;
+                    font-size: 1.25vw;
+                    margin-bottom: .5em;
+                    text-transform: uppercase;
+                }
+                .text__subHead{
+                    font-weight: 400;
+                    font-size: 1.6vw;
+                    margin-bottom: .7em;
+                }
+                .text__description{
+                    font-weight: 300;
+                    font-size: 1.25vw;
+                }
+            }
+        }
+    }
+    .box2{
+        height: 100%;
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    //Circle slider
+    .draggable{
+        border-radius: 50%;
+        &:hover{
+            transform: scale(1.1);
+            transition: all 0.3s linear;
+            box-shadow: 0 0 22px 25px rgba(0, 0, 0, 0.2);
+        }
+    }
+    
+    .box2__slideshow{
+        width: 500px;
+        .navigation__item{
+            width: 50px;
+            height: 500px;
+            border-radius: 50%;
+        }
+        .item1{
+            background: url(../assets/img/aerial-view-800x800.jpg) center / cover no-repeat;
+        }
+        .item2{
+            background: url(../assets/img/Arrival-800x800.jpg) center / cover no-repeat;
+        }
+        .item3{
+            background: url(../assets/img/departure-800x800.jpg) center / cover no-repeat;
+        }
+        .item4{
+            background: url(../assets/img/cody-black-Nm89MZvAR5I-unsplash-800x800.jpg) center / cover no-repeat;
+        }
+        .item5{
+            background: url(../assets/img/process-img-2@2x-800x800.jpg) center / cover no-repeat;
+        }
+        .item6{
+            background: url(../assets/img/what-img-2-720x800.jpg) center / cover no-repeat;
+        }
+        .item7{
+            background: url(../assets/img/process-img-3@2x-800x800.jpg) center / cover no-repeat;
+        }
+    }
+}

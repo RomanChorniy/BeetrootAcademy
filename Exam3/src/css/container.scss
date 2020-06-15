@@ -1,0 +1,22 @@
+.container{
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+    font-family: 'Euclid Square', sans-serif;
+}
+p{
+    margin: 0;
+}
+hr{
+    margin: 0;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+button, 
+button:active, 
+button:focus {
+    outline: none;
+    cursor: pointer;
+}

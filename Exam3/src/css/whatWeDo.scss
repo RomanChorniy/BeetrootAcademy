@@ -1,0 +1,50 @@
+#whatWeDo{
+    .whatWeDo__block{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    .block__box1{
+        background: url(../assets/img/media-what-block.png) 76% 0 / cover no-repeat;
+        width: 840px;
+        height: 800px;
+        position: relative;
+        top: 250px;
+    }
+    .block__box2{
+        .block__box2__text{
+            font-size: 42px;
+            max-width: 312px;
+            padding-bottom: 40px;
+        }
+        .block__box2__text>span{
+            color: #ff4e58;
+        }
+        .box2__btn{
+            border: 2px solid #969384;
+            border-radius: 40px;
+            width: 230px;
+            height: 63px;
+            text-align: center;
+            line-height: 63px;
+            font-weight: 600;
+            font-size: 19px;
+            &:hover{
+                animation: button-anime-black 1s ease-out;
+                animation-fill-mode: forwards;
+                    a{
+                        color:white
+                    }
+                }
+            }
+            @keyframes button-anime-black {
+                0% {
+                    box-shadow: 0 0 0 0px rgba(0, 0, 0, 0.2);
+                }
+                100% {
+                    box-shadow: 0 0 0 35px rgba(0, 0, 0, 0);
+                    background-color: black;
+                }
+            }
+        }
+    }
+}

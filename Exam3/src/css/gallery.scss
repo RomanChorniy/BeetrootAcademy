@@ -1,0 +1,64 @@
+#gallery{
+    padding: 50px;
+    background-color: #000;
+    border-bottom: 1px solid #969384;
+    border-top: 1px solid #969384;
+    .gallery__slider{
+        margin: 0 auto;
+        width: 80%;
+    }
+    .slick-slide{ 
+        background: rgba(0,0,0,0.5);
+        padding: 40px;
+        &:hover{
+            background: rgba(0,0,0,0.0);
+        }
+    }
+
+    .item{
+        max-width: 284px;
+        min-width: 284px;
+        height: 284px;
+        text-align: right;
+        padding: 10px;
+        position: relative;
+        &:hover{
+               ::after{
+                background: rgba(0,0,0,0.0);
+               }
+            }
+        ::after{
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background: rgba(0,0,0,0.5);
+            
+        }
+        .icon-instagram{
+            color: white;
+            font-size: 32px;
+        }
+    }
+    .slider__item1{
+        background: url(../assets/img/82809343_868533466999337_7232191582676763584_n.jpg) center / cover no-repeat;
+    }
+    .slider__item2{
+        background: url(../assets/img/101320996_620220398576982_8354317643120193914_n.jpg) center / cover no-repeat;
+    }
+    .slider__item3{
+        background: url(../assets/img/101529796_2340406146259063_4947824526079840459_n.jpg) center / cover no-repeat;
+    }
+    .slider__item4{
+        background: url(../assets/img/101542451_3266466673398158_4427408947943117146_n.jpg) center / cover no-repeat;
+    }
+    .slider__item5{
+        background: url(../assets/img/15_greenland-960x1000.jpg) center / cover no-repeat;
+    }
+    .slider__item6{
+        background: url(../assets/img/travelagent2-600x640.jpg) center / cover no-repeat;
+    }
+
+}
