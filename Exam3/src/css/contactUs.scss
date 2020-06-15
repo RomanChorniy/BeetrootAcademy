@@ -1,0 +1,66 @@
+#contactUs{
+    background-color: #181818;
+    display: flex;
+    height: 850px;
+    h3{
+        margin: 0;
+        font-weight: 300;
+    }
+    .contactUs__box1{
+        padding: 155px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-size: 43px;
+        flex: 1;
+        .box1__title{
+            color: white;
+            max-width: 401px;
+        }
+        .box1__title_red{
+            color: #ff4e58;
+            padding-bottom: 40px;
+        }
+        .box1__btn{
+            width: 230px;
+            height: 60px;
+            border: 2px solid #969384;
+            border-radius: 40px;
+            line-height: 60px;
+            text-align: center;
+            display: inline-block;
+            font-size: 19px;
+            text-decoration: none;
+            color: white;
+            &:hover{
+                animation: button-anime-light 1s ease-out;
+                animation-fill-mode: forwards;
+                color:black;
+                font-weight: bolder;
+            }
+            @keyframes button-anime-light {
+                0% {
+                    box-shadow: 0 0 0 0px rgba(255, 255, 255, 0.2);
+                }
+                100% {
+                    box-shadow: 0 0 0 35px rgba(255, 255, 255, 0);
+                    background-color: white;
+                }
+            }
+        }
+    }
+    .contactUs__box2__frame{
+        overflow: hidden;
+        position: relative;
+        width: 600px;
+        height: 850px;
+    }
+    .contactUs__box2{
+        background: url(../assets/img/media-contact.jpg) center / cover no-repeat;
+        width: 600px;
+        height: 140%;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+}

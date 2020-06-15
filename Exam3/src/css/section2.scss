@@ -1,0 +1,52 @@
+#section2{
+    background-color: #e1dbcf;
+    display: flex;
+    justify-content: stretch;
+    height: 782px;
+    overflow: hidden;
+    padding-bottom: 40px;
+    
+    .box1{
+        position: relative;
+        height: 100%;
+        width: 100%;
+
+        //Паралакс
+        .box1__image_p{
+            position: absolute;
+            width: 100%;
+            height: 130%;
+            top: -30%;
+            left: 0;
+            background: url(../assets/img/15_greenland-960x1000.jpg) 0 0 / cover no-repeat;
+            z-index: 1;
+        }
+        //end.
+    }
+    .box2{
+        padding: 92px 0 0;
+        &__line{
+            position: relative;
+            .icon-circle{
+                position: absolute;
+                left: 33%;
+                transform: translateY(-50%);
+                font-size: 10px;
+            }
+            .icon-circle:last-child{
+                left: 66%;
+            }
+        }
+        &__text{
+            margin: 265px auto 0;
+            font-size: 48px;
+            width: 63%;
+            &_red{
+                color: #ff4e57;
+                .icon-copyright{
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+}
