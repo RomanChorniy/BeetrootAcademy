@@ -12,20 +12,28 @@
         display: flex;
         position: fixed;
         z-index: 3;
+        left: 44px;
         @media screen and ( max-width: 500px){
             left: 50%;
             transform: translateX(-50%);
         }
         &__menu{
-            padding: 9px 20px 0;
+            background-color: rgba($color: #313131, $alpha: .5);
+            border-radius: 10px;
+            height: 40px;
+            width: 40px;
+            border: 2px solid #ccff90;
             .menu__btn{
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
                 width: 20px;
                 height: 14px;
                 position: relative;
                 cursor: pointer;
                 // Style Btn__line when scrole.
                 div.line_black{
-                    background-color: black;
+                    // background-color: black;
                 }
                 .btn__line{
                     background-color: white;
@@ -59,6 +67,7 @@
             color: #ccff90;
             font-size: 24px;
             padding: 0 15px;
+            line-height: 38px;
             // Style image when scroll.
             
             .icon-travelshift-icon{
@@ -70,7 +79,7 @@
     .menu__open{ // Style logo when menu is open.
         .logo__menu{ 
             .menu__btn div.btn__line{
-                background-color: black;
+                background-color: white;
             }
             .menu__btn .btn__line:first-child{
                 top: 6px;
@@ -201,7 +210,7 @@
             height: 100vh;
         }
         .slider__start_item1{
-            background:url(../assets/img/startImg1.jpg) center / cover no-repeat;
+            background:url(../assets/img/startImg4.jpg) center / cover no-repeat;
         }
         .slider__start_item2{
             background:url(../assets/img/startImg2.jpg) center / cover no-repeat;
@@ -210,7 +219,7 @@
             background:url(../assets/img/startImg3.jpg) center / cover no-repeat;
         }
         .slider__start_item4{
-            background:url(../assets/img/startImg4.jpg) center / cover no-repeat;
+            background:url(../assets/img/startImg1.jpg) center / cover no-repeat;
         }
     }
     // Menu page:
