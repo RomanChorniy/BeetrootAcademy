@@ -5,11 +5,16 @@
     height: 782px;
     overflow: hidden;
     padding-bottom: 40px;
-    
+    @media screen and ( max-width: 700px){
+        flex-direction: column-reverse;
+    }
     .box1{
         position: relative;
         height: 100%;
         width: 100%;
+        @media screen and ( max-width: 700px){
+            overflow: hidden;
+        }
 
         //Паралакс
         .box1__image_p{
@@ -39,8 +44,11 @@
         }
         &__text{
             margin: 265px auto 0;
-            font-size: 48px;
+            font-size: calc(30px + 18 * ((100vw - 320px) / (1600 - 320)));
             width: 63%;
+            @media screen and ( max-width: 700px){
+                margin: 100px auto;
+            }
             &_red{
                 color: #ff4e57;
                 .icon-copyright{

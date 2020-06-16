@@ -5,6 +5,23 @@
         justify-content: space-around;
         align-items: center;
         height: 100%;
+        @media screen and ( max-width: 1100px){
+            padding: 0 4%;
+            .box1{
+                padding: 0;
+            }
+        }
+        @media screen and ( max-width: 750px){
+            flex-direction: column;
+            .box1{
+                flex-wrap: wrap;
+                .box1__controlPanel{
+                    .controlPanel__text{
+                        width: 220px;
+                    }
+                }
+            }
+        }
     }
     .box1{
         flex: auto;
@@ -20,13 +37,22 @@
             justify-content: space-between;
             padding-bottom: 88px;
             .tablo__number{
-                font-size: 11vw;
+                font-size: 171px;
                 color: #ff4e57;
             }
             .tablo__text{
                 font-size: 37px;
                 width: 166px;
                 align-self: center;
+            }
+            @media screen and ( max-width: 980px){
+                width: auto;
+                .tablo__number{
+                    font-size: calc(131px + 40 * ((100vw - 320px) / (1600 - 320)));
+                }
+                .tablo__text{
+                    font-size: calc(20px + 17 * ((100vw - 320px) / (1600 - 320)));
+                }
             }
         }
         &__controlPanel{
@@ -84,6 +110,14 @@
                     font-weight: 300;
                     font-size: 1.25vw;
                 }
+                @media screen and ( max-width: 1350px){
+                    .text__head, .text__description{
+                        font-size: 16px;
+                    }
+                    .text__subHead{
+                        font-size: 21px;
+                    }
+                }
             }
         }
     }
@@ -110,6 +144,12 @@
             width: 50px;
             height: 500px;
             border-radius: 50%;
+        }
+        @media screen and ( max-width: 980px){
+            width: calc(300px + 200 * ((100vw - 320px) / (1600 - 320)));
+            .navigation__item{
+                height: calc(300px + 200 * ((100vw - 320px) / (1600 - 320)));
+            }
         }
         .item1{
             background: url(../assets/img/aerial-view-800x800.jpg) center / cover no-repeat;

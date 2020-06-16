@@ -46,7 +46,6 @@ const textForChecklist = [
 ]
 let i = 0;
 $('.btnBox__btnDown').click(() => {
-    console.log(i);
     if (textForChecklist[i]) {
         i++;
         $('.text__head').html(textForChecklist[i].text__head);
@@ -72,7 +71,6 @@ $('.btnBox__btnDown').click(() => {
     }
 })
 $('.btnBox__btnUp').click(() => {
-    console.log(i);
     if (textForChecklist[i] || --i) {
         i--;
         $('.text__head').html(textForChecklist[i].text__head);

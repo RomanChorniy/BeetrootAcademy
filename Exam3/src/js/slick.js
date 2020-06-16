@@ -9,6 +9,30 @@ $(".menu__page__slider").slick({
     autoplaySpeed: 1,
     arrows: false,
     speed: 20000,
+    responsive: [
+        {
+            breakpoint: 700,
+            settings: {
+                slidesToShow: 2,
+            }
+        },
+        {
+            breakpoint: 400,
+            settings: {
+                slidesToShow: 1,
+            }
+        }]
+});
+
+//Section header. Slider settings.
+$(".slider__start").slick({
+    arrows: false,
+    slidesToShow: 1,
+    autoplay: true,
+    autoplaySpeed: 6000,
+    speed: 2000,
+    fade: true,
+    cssEase: 'linear'
 });
 
 //Slick slider from section "vacationCheacklist".
@@ -33,17 +57,8 @@ $(".gallery__slider").slick({
             breakpoint: 900,
             settings: {
                 slidesToShow: 1,
+
             }
         }]
 });
 
-//Section header. Slider settings.
-$(".slider__start").slick({
-    arrows: false,
-    slidesToShow: 1,
-    autoplay: true,
-    autoplaySpeed: 6000,
-    speed: 2000,
-    fade: true,
-    cssEase: 'linear'
-});

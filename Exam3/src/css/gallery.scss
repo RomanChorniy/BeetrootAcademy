@@ -3,9 +3,15 @@
     background-color: #000;
     border-bottom: 1px solid #969384;
     border-top: 1px solid #969384;
+    @media screen and ( max-width: 470px){
+        padding: 50px 5px;
+    }
     .gallery__slider{
         margin: 0 auto;
         width: 80%;
+        @media screen and ( max-width: 900px){
+            width: 354px;
+        }
     }
     .slick-slide{ 
         background: rgba(0,0,0,0.5);
@@ -40,6 +46,11 @@
         .icon-instagram{
             color: white;
             font-size: 32px;
+        }
+        @media screen and ( max-width: 470px){
+            max-width: 220px;
+            min-width: 220px;
+            height: 220px;
         }
     }
     .slider__item1{

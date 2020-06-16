@@ -6,6 +6,15 @@
     background-color: white;
     position: relative;
     z-index: 1;
+    @media screen and ( max-width: 640px){
+        padding: 65px 15px 108px;
+    }
+    @media screen and ( max-width: 1150px){
+        flex-wrap: wrap;
+        .news__box1{
+            margin-bottom: 10px;
+        }
+    }
     .news__box1{
         h6,h3,h4{
             margin: 0;
@@ -50,7 +59,7 @@
     .news__box2{
         background: url(../assets/img/travelagent2-600x640.jpg) center / cover  no-repeat;
         width: 400px;
-        height: 750px;
+        height: 650px;
         display: flex;
         flex-direction: column;
         padding: 73px;

@@ -33,6 +33,12 @@
                 color: #969384;
             }
         }
+        @media screen and ( max-width: 500px){
+            flex-direction: column  ;
+            .menu__item{
+                width: 100%;
+            }
+        }
     }
     .social{
         display: flex;
@@ -56,7 +62,15 @@
                 color: #960911;
             }
         }
-        
+        @media screen and ( max-width: 500px){
+            flex-wrap: wrap ;
+            a{
+                min-width: 132px;
+            }
+            .icon{
+                padding-left: 5px;
+            }
+        }
     }
     .footer__btn{
         position: relative;
@@ -99,5 +113,11 @@
             line-height: 30px;
             color: #ff4e58;
         }
+    }
+    @media screen and ( max-width: 655px){
+        flex-direction: column;
+    }
+    @media screen and ( max-width: 500px){
+        padding: 109px 20px;
     }
 }
