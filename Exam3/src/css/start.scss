@@ -13,10 +13,6 @@
         position: fixed;
         z-index: 3;
         left: 44px;
-        @media screen and ( max-width: 500px){
-            left: 50%;
-            transform: translateX(-50%);
-        }
         &__menu{
             background-color: rgba($color: #313131, $alpha: .5);
             border-radius: 10px;
@@ -365,6 +361,10 @@
                 .image10{
                     background: url(../assets/img/76984238_579630192686317_385353000589325783_n.jpg) center / cover no-repeat;
                 }
+                @media screen and ( max-height: 800px){
+                    padding: 30px 0 0;
+                }
+                
             }
         }
     }

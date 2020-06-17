@@ -3,6 +3,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const easyScroll = require('easy-scroll');
+const autoprefixer = require('autoprefixer');
 
 module.exports = {
     context: path.resolve(__dirname, 'src'),
@@ -38,11 +39,11 @@ module.exports = {
         rules: [
             {
                 test: /\.css$/,
-                use: ['style-loader', 'css-loader']
+                use: ['style-loader', 'css-loader', "postcss-loader"]
             },
             {
                 test: /\.(s[ac]ss|less)$/,
-                use: ['style-loader', 'css-loader', 'sass-loader']
+                use: ['style-loader', 'css-loader', "postcss-loader", 'sass-loader']
             },
             {
                 test: /\.(ttf|woff|woff2|eot)$/,
