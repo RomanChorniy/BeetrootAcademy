@@ -1,0 +1,268 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  line-height: 1.5;
+  font-family: "Euclid Square", sans-serif;
+}
+
+body {
+  background: url(../../img/406f1e66-22d9-4ab9-b530-695f1171ca3c.webp) fixed center/cover no-repeat;
+}
+
+.article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  background-color: transparent;
+  padding: 30px 30px 0;
+}
+@media screen and (max-width: 1100px) {
+  .article {
+    padding: 30px 0 0 0;
+  }
+}
+
+.logo {
+  align-self: start;
+  padding-left: 100px;
+}
+.logo h1 {
+  color: white;
+  font-size: 111px;
+  font-weight: 400;
+}
+@media screen and (max-width: 630px) {
+  .logo h1 {
+    display: none;
+  }
+}
+
+header {
+  background-color: rgba(179, 229, 252, 0.8);
+  padding: 60px 50px 0px;
+  height: 90vh;
+  width: 50%;
+  display: inline-block;
+  align-self: flex-end;
+  border-radius: 20px;
+  margin-bottom: 60px;
+}
+header .title, header .text1, header .text2, header .text3 {
+  width: 100%;
+  padding: 10px 0;
+}
+header .title {
+  font-size: 70px;
+  font-weight: 400;
+  max-width: 570px;
+}
+header .text1 {
+  font-size: 29px;
+}
+header .text2 {
+  font-size: 24px;
+}
+header .text3 {
+  font-size: 32px;
+}
+@media screen and (max-width: 1100px) {
+  header {
+    align-self: center;
+    width: 85%;
+  }
+}
+@media screen and (max-width: 777px) {
+  header .title {
+    font-size: 50px;
+  }
+  header .text1, header .text2, header .text3 {
+    font-size: 24px;
+  }
+}
+
+span {
+  color: #42a5f5;
+}
+
+.team__title {
+  font-size: 40px;
+  text-align: center;
+  padding: 30px 0;
+}
+
+.team {
+  display: inline-block;
+  width: 80%;
+  margin: 0 auto 50px;
+  background-color: white;
+  border-radius: 20px;
+}
+
+.cart {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+}
+.cart img {
+  border-radius: 50%;
+}
+.cart div {
+  width: 50%;
+}
+.cart div .name {
+  font-size: 30px;
+}
+.cart div .position {
+  text-transform: uppercase;
+  font-size: 18px;
+  color: #42a5f5;
+  padding-bottom: 10px;
+}
+.cart div .description {
+  font-size: 16px;
+  color: #313131;
+}
+@media screen and (max-width: 777px) {
+  .cart {
+    flex-direction: column;
+  }
+  .cart div {
+    width: 90%;
+  }
+}
+
+#footer {
+  background-color: #000;
+  padding: 109px;
+  display: flex;
+}
+#footer .box1, #footer .box2 {
+  flex: 1;
+}
+#footer .footer__logo {
+  color: white;
+  text-decoration: none;
+  font-size: 32px;
+}
+#footer .footer__logo .icon-travelshift-icon {
+  font-size: 25px;
+}
+#footer .footer__menu {
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  color: #969384;
+  list-style: none;
+  justify-content: space-between;
+}
+#footer .footer__menu .menu__item {
+  width: 30%;
+  padding: 5px;
+  font-size: 23px;
+}
+#footer .footer__menu .menu__item:hover a {
+  color: white;
+}
+#footer .footer__menu .menu__item a {
+  color: #969384;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+@media screen and (max-width: 500px) {
+  #footer .footer__menu {
+    flex-direction: column;
+  }
+  #footer .footer__menu .menu__item {
+    width: 100%;
+  }
+}
+#footer .social {
+  display: flex;
+  padding: 20px 0 60px;
+}
+#footer .social a {
+  text-decoration: none;
+  color: #969384;
+  font-size: 16px;
+  flex: 0.5;
+}
+#footer .social a:hover {
+  color: white;
+  font-weight: bolder;
+}
+#footer .social .icon {
+  color: #ff4e58;
+  font-size: 23px;
+  flex: 0.1;
+  cursor: pointer;
+}
+#footer .social .icon:hover {
+  color: #960911;
+}
+@media screen and (max-width: 500px) {
+  #footer .social {
+    flex-wrap: wrap;
+  }
+  #footer .social a {
+    min-width: 132px;
+  }
+  #footer .social .icon {
+    padding-left: 5px;
+  }
+}
+#footer .footer__btn {
+  position: relative;
+  display: block;
+  width: 250px;
+  height: 60px;
+  border: 1px solid #969384;
+  border-radius: 40px;
+  text-decoration: none;
+  text-align: center;
+  color: white;
+  line-height: 60px;
+  font-size: 18px;
+}
+#footer .footer__btn:hover {
+  animation: button-anime-light 1s ease-out;
+  animation-fill-mode: forwards;
+  color: black;
+  font-weight: bolder;
+}
+@keyframes button-anime-light {
+  0% {
+    box-shadow: 0 0 0 0px rgba(255, 255, 255, 0.2);
+  }
+  100% {
+    box-shadow: 0 0 0 35px rgba(255, 255, 255, 0);
+    background-color: white;
+  }
+}
+#footer .footer__btn .icon-line-chart {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  transform: translateY(-50%);
+  border: 2px solid #ff4e58;
+  border-radius: 50%;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  color: #ff4e58;
+}
+@media screen and (max-width: 655px) {
+  #footer {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 500px) {
+  #footer {
+    padding: 109px 20px;
+  }
+}
